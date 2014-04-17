@@ -7,10 +7,15 @@ var asana = require('asana');
     console.log(me)
   });
 */
+
 var ria = require('./lib/ria.js');
 
-
 ria.setCreditentials('RDW', 'RDW');
-ria.setInstanceUrl('https://mp-ria-14.zetcom.com/MpWeb-ZetcomZis/')
 
-ria._request();
+ria.setInstanceUrl('https://mp-ria-14.zetcom.com/MpWeb-ZetcomZis/');
+
+ria._request(null, function(err){
+	if (err) // if there are any errors returned, display them to the console!
+		console.dir('Errors : ' + err)
+});
+
