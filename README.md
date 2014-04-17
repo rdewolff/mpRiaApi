@@ -1,4 +1,4 @@
-### ZetCom RIA API Javascript access
+# ZetCom RIA API Javascript access
 
 
 The goal is to be able to access RIA api and retrieve information from there.
