@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.zetcom.com/ria/ws/module">
+  <modules>
+    <module name="User">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="UsrSurNameTxt" />
+        <dataField dataType="Varchar" name="UsrRoleTxt" />
+        <dataField dataType="Varchar" name="UsrRiaIdTxt" />
+        <dataField dataType="Varchar" name="UsrPhoneTxt" />
+        <dataField dataType="Varchar" name="UsrPasswordTxt" />
+        <dataField dataType="Clob" name="UsrNotesClb" />
+        <dataField dataType="Boolean" name="UsrIsAdminBoo" />
+        <dataField dataType="Varchar" name="UsrIdTxt" />
+        <dataField dataType="Varchar" name="UsrForeNameTxt" />
+        <dataField dataType="Varchar" name="UsrEmailTxt" />
+        <dataField dataType="Varchar" name="UsrDepartmentTxt" />
+        <dataField dataType="Long" name="UsrAuthenticationLnu" />
+        <vocabularyReference name="UsrStartFormVoc" id="100000061" />
+        <vocabularyReference name="UsrLanguageVoc" id="100000037" />
+        <vocabularyReference name="UsrGenderVoc" id="100000059" />
+        <vocabularyReference name="UsrAuthenticationTypeVoc" id="100000057" />
+        <vocabularyReference name="UsrAccountDisabledTxt" id="100000040" />
+        <moduleReference name="UsrSearchRef" targetModule="Search" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="UsrUserGroupRef" targetModule="UserGroup" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="UsrAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="UsrMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="Instance">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Long" name="InsAllocDiskSpaceLnu" />
+        <dataField dataType="Varchar" name="InsCurrVersTxt" />
+        <dataField dataType="Long" name="InsConcUserLnu" />
+        <dataField dataType="Varchar" name="InsCurrChsetTxt" />
+        <dataField dataType="Varchar" name="InsPasswordTxt" />
+        <dataField dataType="Clob" name="InsNotesClb" />
+        <dataField dataType="Varchar" name="InsBackupLevelTxt" />
+        <dataField dataType="Varchar" name="InsNameTxt" />
+        <dataField dataType="Varchar" name="InsLogicalNameTxt" />
+        <dataField dataType="Varchar" name="InsUserNameTxt" />
+        <dataField dataType="Numeric" name="InsPriceLicenseNum" />
+        <dataField dataType="Numeric" name="InsPriceDiskSpaceNum" />
+        <dataField dataType="Boolean" name="InsInHouseBoo" />
+        <dataField dataType="Varchar" name="InsSecurityLevelTxt" />
+        <dataField dataType="Varchar" name="InsCollationTxt" />
+        <dataField dataType="Numeric" name="InsConcUserNum" />
+        <dataField dataType="Numeric" name="InsConversionRateNum" />
+        <dataField dataType="Numeric" name="InsUsedDiskSpaceNum" />
+        <dataField dataType="Numeric" name="InsPriceDiskSpaceStandardNum" />
+        <dataField dataType="Numeric" name="InsPriceLicenseStandardNum" />
+        <vocabularyReference name="InsActiveVoc" id="100000040" />
+        <vocabularyReference name="InsCollationVoc" />
+        <vocabularyReference name="InsLanguageVoc" id="100000037" />
+        <vocabularyReference name="InsProductNameVoc" id="100000043" />
+        <vocabularyReference name="InsCurrVersVoc" id="100000042" />
+        <vocabularyReference name="InsTypeVoc" id="100000074" />
+        <vocabularyReference name="InsStateVoc" />
+        <vocabularyReference name="InsCurrencyVoc" id="100000036" />
+        <repeatableGroup name="InsAccessGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="LoginTxt" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="PasswordTxt" />
+            <dataField dataType="Varchar" name="URLTxt" />
+            <vocabularyReference name="TypeVoc" id="100000041" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="InsStatusGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Date" name="DateDat" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="ChangedByVoc" id="100000044" />
+            <vocabularyReference name="TypeVoc" id="100000045" />
+            <moduleReference name="InsStatusUserRef" targetModule="User" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="InsMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="InsServerRef" targetModule="Server" multiplicity="N:1">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="InsClientRef" targetModule="Client" multiplicity="N:1">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="InsAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" id="100000104" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="InsUserRef" targetModule="User" multiplicity="N:1">
+          <moduleReferenceItem />
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="AddressGroup">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="AgrNameTxt" />
+        <dataField dataType="Clob" name="AgrNotesClb" />
+        <vocabularyReference name="AgrTypeVoc" id="100000034" />
+        <repeatableGroup name="AgrActionGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="UserVoc" />
+            <dataField dataType="Date" name="DateDat" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="SubjectTxt" />
+            <dataField dataType="Varchar" name="CommunicationVoc" />
+            <vocabularyReference name="StatusVoc" id="100000033" />
+            <vocabularyReference name="ActionVoc" id="100000032" />
+            <moduleReference name="AgrActionTemplateRef" targetModule="Template" multiplicity="N:1" />
+            <moduleReference name="AgrActionUserRef" targetModule="User" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="AgrMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="AgrAddressGroupARef" targetModule="AddressGroup" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="AttachmentTxt" />
+            <vocabularyReference name="PriorityVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="AgrAddressGroupBRef" targetModule="AddressGroup" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="AttachmentTxt" />
+            <vocabularyReference name="PriorityVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="AgrMemberAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Numeric" name="ValueNum" />
+            <dataField dataType="Date" name="DeadlineDat" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="PaymentTypeVoc" />
+            <vocabularyReference name="MemberTypeVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="AgrAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Date" name="ValidityDateDat" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Numeric" name="ValueNum" />
+            <dataField dataType="Long" name="InvoiceLnu" />
+            <vocabularyReference name="CurrencyVoc" id="100000036" />
+            <vocabularyReference name="MemberStatusVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="Search">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="SeaInternalIdentifierTxt" />
+        <dataField dataType="Varchar" name="SeaFullTextQueryTxt" />
+        <dataField dataType="Varchar" name="SeaUserTxt" />
+        <dataField dataType="Varchar" name="SeaNameTxt" />
+        <dataField dataType="Varchar" name="SeaModuleTxt" />
+        <dataField dataType="Varchar" name="SeaSortTxt" />
+        <dataField dataType="Clob" name="SeaNotesClb" />
+        <repeatableGroup name="SeaCriteriaGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="Operand1Txt" />
+            <dataField dataType="Timestamp" name="Operand1Tst" />
+            <dataField dataType="Clob" name="Operand2Clb" />
+            <dataField dataType="Boolean" name="Operand2Boo" />
+            <dataField dataType="Long" name="Operand1Lnu" />
+            <dataField dataType="Date" name="Operand1Dat" />
+            <dataField dataType="Time" name="Operand1Tim" />
+            <dataField dataType="Numeric" name="Operand1Num" />
+            <dataField dataType="Varchar" name="FieldTxt" />
+            <dataField dataType="Clob" name="Operand1Clb" />
+            <dataField dataType="Boolean" name="Operand1Boo" />
+            <dataField dataType="Long" name="SortLnu" />
+            <dataField dataType="Timestamp" name="Operand2Tst" />
+            <dataField dataType="Varchar" name="Operand2Txt" />
+            <dataField dataType="Date" name="Operand2Dat" />
+            <dataField dataType="Long" name="Operand2Lnu" />
+            <dataField dataType="Numeric" name="Operand2Num" />
+            <dataField dataType="Time" name="Operand2Tim" />
+            <vocabularyReference name="OperatorTimeVoc" />
+            <vocabularyReference name="OperatorVarcharVoc" />
+            <vocabularyReference name="OperatorDateVoc" />
+            <vocabularyReference name="OperatorLongVoc" />
+            <vocabularyReference name="OperatorNumericVoc" />
+            <vocabularyReference name="OperatorTimestampVoc" />
+            <vocabularyReference name="OperatorBooleanVoc" />
+            <vocabularyReference name="OperatorClobVoc" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+      </moduleItem>
+    </module>
+    <module name="Template">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Long" name="TplTestRecordLnu" />
+        <dataField dataType="Varchar" name="TplModulePathTxt" />
+        <dataField dataType="Boolean" name="TplAutoSaveOnServerBoo" />
+        <dataField dataType="Clob" name="TplURLClb" />
+        <dataField dataType="Clob" name="TplNotesClb" />
+        <dataField dataType="Varchar" name="TplOriginalFileTxt" />
+        <dataField dataType="Varchar" name="TplNameTxt" />
+        <vocabularyReference name="TplCategoryVoc" id="100000095" />
+        <vocabularyReference name="TplCurrentStatusVoc" />
+        <vocabularyReference name="TplLanguageVoc" id="100000037" />
+        <vocabularyReference name="TplStatusVoc" />
+        <vocabularyReference name="TplTypeVoc" id="100000114" />
+        <vocabularyReference name="TplModuleVoc" id="100000038" />
+        <virtualField name="TplSortVrt" />
+        <repeatableGroup name="TplLabelGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="NameTxt" />
+            <vocabularyReference name="LanguageVoc" id="100000037" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="TplActionGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="ScriptClb" />
+            <vocabularyReference name="TypeVoc" />
+            <moduleReference name="TplActionFunctionRef" targetModule="Function" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="TplUserRef" targetModule="User" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="TplDatasourceRef" targetModule="Datasource" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="Multimedia">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="MulFileFormatTxt" />
+        <dataField dataType="Clob" name="MulNotesClb" />
+        <dataField dataType="Varchar" name="MulCaptionTxt" />
+        <dataField dataType="Varchar" name="MulSizeTxt" />
+        <dataField dataType="Varchar" name="MulWeightNum" />
+        <dataField dataType="Varchar" name="MulTitleTxt" />
+        <dataField dataType="Varchar" name="MulPhotocreditTxt" />
+        <dataField dataType="Varchar" name="MulOriginalFileTxt" />
+        <dataField dataType="Date" name="MulShootingDateDat" />
+        <dataField dataType="Varchar" name="MulResolutionTxt" />
+        <vocabularyReference name="MulFormatVoc" id="100000046" />
+        <vocabularyReference name="MulInternetVoc" />
+        <vocabularyReference name="MulShootingReasonVoc" id="100000048" />
+        <vocabularyReference name="MulUsageVoc" id="100000049" />
+        <moduleReference name="MulInstanceRef" targetModule="Instance" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="MulServerRef" targetModule="Server" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="MulClientRef" targetModule="Client" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="MulAddressGroupRef" targetModule="AddressGroup" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="MulAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="Function">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="FunClassPathTxt" />
+        <dataField dataType="Clob" name="FunCodeClb" />
+        <dataField dataType="Varchar" name="FunEntryPointTxt" />
+        <dataField dataType="Boolean" name="FunEditableBoo" />
+        <dataField dataType="Varchar" name="FunNameTxt" />
+        <dataField dataType="Varchar" name="FunFldSelectorTxt" />
+        <dataField dataType="Long" name="FunTestIdLnu" />
+        <dataField dataType="Clob" name="FunNotesClb" />
+        <vocabularyReference name="FunCurrentStatusVoc" />
+        <vocabularyReference name="FunTypeVoc" id="100000106" />
+        <repeatableGroup name="FunStatusGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Timestamp" name="TimeStampTst" />
+            <vocabularyReference name="StatusVoc" />
+            <moduleReference name="FunStatusUserRef" targetModule="User" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+      </moduleItem>
+    </module>
+    <module name="Vocabulary">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="VocRiaIdTxt" />
+        <dataField dataType="Numeric" name="VocRiaIdNum" />
+        <dataField dataType="Varchar" name="VocSortTxt" />
+        <dataField dataType="Varchar" name="VocCurrentStatusTxt" />
+        <dataField dataType="Varchar" name="VocNameTxt" />
+        <dataField dataType="Clob" name="VocNotesClb" />
+        <dataField dataType="Varchar" name="VocReferenceCrf" />
+        <vocabularyReference name="VocStatusVoc" id="100000065" />
+        <virtualField name="VocSortVrt" />
+        <repeatableGroup name="VocRefExternGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="ReferenceTxt" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" id="100000064" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="VocTermGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Numeric" name="RiaIdNum" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="AuthorTxt" />
+            <dataField dataType="Varchar" name="RiaIdTxt" />
+            <dataField dataType="Varchar" name="TermTxt" />
+            <vocabularyReference name="LanguageVoc" id="100000037" />
+            <vocabularyReference name="TypeVoc" id="100000066" />
+            <vocabularyReference name="StatusVoc" id="100000065" />
+            <moduleReference name="VocTermGrpUsrRef" targetModule="User" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="VocStatusGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Date" name="DateDat" />
+            <dataField dataType="Varchar" name="AuthorTxt" />
+            <vocabularyReference name="StatusVoc" id="100000065" />
+            <moduleReference name="VocStatusGrpUsrRef" targetModule="User" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="VocUrlGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="UrlTxt" />
+            <vocabularyReference name="TypeVoc" id="100000067" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="VocPolyParentRef" targetModule="Vocabulary" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="VocReferenceCrfRef" targetModule="Vocabulary" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="VocParentRef" targetModule="Vocabulary" multiplicity="N:1">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="VocPolyChildRef" targetModule="Vocabulary" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="VocVocabularyGroupRef" targetModule="VocabularyGroup" multiplicity="N:1">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="VocChildRef" targetModule="Vocabulary" multiplicity="1:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="VocMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name="VocVocCre">
+          <compositeItem seqNo="0">
+            <moduleReference name="VocVocARef" targetModule="Vocabulary" multiplicity="M:N">
+              <moduleReferenceItem>
+                <dataField dataType="Clob" name="NotesClb" />
+                <vocabularyReference name="TypeVoc" />
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+          <compositeItem seqNo="1">
+            <moduleReference name="VocVocBRef" targetModule="Vocabulary" multiplicity="M:N">
+              <moduleReferenceItem>
+                <dataField dataType="Clob" name="NotesClb" />
+                <vocabularyReference name="TypeVoc" />
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+    </module>
+    <module name="Server">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="SerSLAYesNoVoc" />
+        <dataField dataType="Varchar" name="SerPasswordTxt" />
+        <dataField dataType="Varchar" name="SerUserNameTxt" />
+        <dataField dataType="Numeric" name="SerTotDiskSpaceNum" />
+        <dataField dataType="Numeric" name="SerTotRamNum" />
+        <dataField dataType="Numeric" name="SerCPUSNum" />
+        <dataField dataType="Numeric" name="SerCostProMonatNum" />
+        <dataField dataType="Boolean" name="SerOnlineBackupBoo" />
+        <dataField dataType="Numeric" name="SerBackSpaceNum" />
+        <dataField dataType="Varchar" name="SerMaintenanceTxt" />
+        <dataField dataType="Varchar" name="SerLogicalNameTxt" />
+        <dataField dataType="Clob" name="SerNotesClb" />
+        <dataField dataType="Varchar" name="SerNameTxt" />
+        <vocabularyReference name="SerSLAVoc" id="100000053" />
+        <vocabularyReference name="SerPurposeVoc" id="100000052" />
+        <vocabularyReference name="SerStatusVoc" id="100000055" />
+        <vocabularyReference name="SerCurrencyCostVoc" id="100000036" />
+        <vocabularyReference name="SerUserNameVoc" id="100000056" />
+        <vocabularyReference name="SerDedicatedVoc" id="100000040" />
+        <repeatableGroup name="SerAccessGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="PasswordTxt" />
+            <dataField dataType="Varchar" name="LoginTxt" />
+            <dataField dataType="Varchar" name="URLTxt" />
+            <vocabularyReference name="TypeVoc" id="100000051" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="SerStatusGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Date" name="DateDat" />
+            <vocabularyReference name="ChangedByVoc" id="100000054" />
+            <vocabularyReference name="TypeVoc" id="100000055" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="SerAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" id="100000104" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="SerClientRef" targetModule="Client" multiplicity="1:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" id="100000035" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="SerInstanceRef" targetModule="Instance" multiplicity="1:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="SerMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="SerServerBRef" targetModule="Server" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeBVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="SerServerARef" targetModule="Server" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeAVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="Datasource">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Clob" name="DtsNotesClb" />
+        <dataField dataType="Varchar" name="DtsModulePathTxt" />
+        <dataField dataType="Varchar" name="DtsNameTxt" />
+        <dataField dataType="Boolean" name="DtsActivatedBoo" />
+        <vocabularyReference name="DtsStatusVoc" />
+        <vocabularyReference name="DtsCurrentStatusVoc" />
+        <vocabularyReference name="DtsModuleVoc" id="100000038" />
+        <virtualField name="DtsSortVrt" />
+        <repeatableGroup name="DtsSectionGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Boolean" name="FlatBoo" />
+            <dataField dataType="Varchar" name="NameTxt" />
+            <dataField dataType="Varchar" name="PathTxt" />
+            <dataField dataType="Long" name="SortLnu" />
+            <vocabularyReference name="TypeVoc" id="100000085" />
+            <moduleReference name="DtsSectionGrpSearchRef" targetModule="Search" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="DtsEntryGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="ConstantTxt" />
+            <dataField dataType="Varchar" name="FieldPathTxt" />
+            <dataField dataType="Varchar" name="SectionTxt" />
+            <dataField dataType="Varchar" name="TagTxt" />
+            <dataField dataType="Long" name="SortLnu" />
+            <vocabularyReference name="ImageSizeVoc" />
+            <vocabularyReference name="GroupingVoc" id="100000040" />
+            <vocabularyReference name="DateFormatVoc" />
+            <vocabularyReference name="SortDirectionVoc" id="100000084" />
+            <vocabularyReference name="SectionVoc" id="100000085" />
+            <vocabularyReference name="NumberFormatVoc" />
+            <vocabularyReference name="TypeVoc" id="100000094" />
+            <moduleReference name="DtsEntryFunctionRef" targetModule="Function" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="DtsLabelGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="NameTxt" />
+            <vocabularyReference name="LanguageVoc" id="100000037" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="DtsTemplateRef" targetModule="Template" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="OrganisationUnit">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="OrgNameTxt" />
+        <dataField dataType="Clob" name="OrgNotesClb" />
+        <dataField dataType="Varchar" name="OrgRiaIdTxt" />
+        <virtualField name="OrgSortVrt" />
+        <repeatableGroup name="OrgModuleGrp">
+          <repeatableGroupItem>
+            <vocabularyReference name="ModuleVoc" id="100000038" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="OrgLabelGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="NameTxt" />
+            <vocabularyReference name="LanguageVoc" id="100000037" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="OrgUserGroupRef" targetModule="UserGroup" multiplicity="M:N">
+          <moduleReferenceItem>
+            <vocabularyReference name="ReadVoc" id="100000040" />
+            <vocabularyReference name="DeleteVoc" id="100000040" />
+            <vocabularyReference name="AddVoc" id="100000040" />
+            <vocabularyReference name="WriteVoc" id="100000040" />
+          </moduleReferenceItem>
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="UserGroup">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="UgrRiaIdTxt" />
+        <dataField dataType="Varchar" name="UgrNameTxt" />
+        <dataField dataType="Clob" name="UgrNotesClb" />
+        <virtualField name="UgrSortVrt" />
+        <repeatableGroup name="UgrLabelGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="NameTxt" />
+            <vocabularyReference name="LanguageVoc" id="100000037" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="UgrViewGrp">
+          <repeatableGroupItem>
+            <vocabularyReference name="ViewVoc" id="100000039" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="UgrModuleGrp">
+          <repeatableGroupItem>
+            <vocabularyReference name="ReadVoc" id="100000040" />
+            <vocabularyReference name="WriteVoc" id="100000040" />
+            <vocabularyReference name="DeleteVoc" id="100000040" />
+            <vocabularyReference name="ModuleVoc" id="100000038" />
+            <vocabularyReference name="AddVoc" id="100000040" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="UgrUserRef" targetModule="User" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="UgrOrganisationUnitRef" targetModule="OrganisationUnit" multiplicity="M:N">
+          <moduleReferenceItem>
+            <vocabularyReference name="ReadVoc" id="100000040" />
+            <vocabularyReference name="DeleteVoc" id="100000040" />
+            <vocabularyReference name="AddVoc" id="100000040" />
+            <vocabularyReference name="WriteVoc" id="100000040" />
+          </moduleReferenceItem>
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="VocabularyGroup">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="VgrNameTxt" />
+        <dataField dataType="Varchar" name="VgrRefExternTxt" />
+        <dataField dataType="Clob" name="VgrNotesClb" />
+        <dataField dataType="Numeric" name="VgrRiaIdNum" />
+        <dataField dataType="Varchar" name="VgrRiaIdTxt" />
+        <dataField dataType="Varchar" name="VgrNewTermTxt" />
+        <vocabularyReference name="VgrActionVoc" id="100000040" />
+        <vocabularyReference name="VgrSynchronizeVoc" id="100000062" />
+        <vocabularyReference name="VgrTypeVoc" id="100000063" />
+        <repeatableGroup name="VgrLabelGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="NameTxt" />
+            <vocabularyReference name="LanguageVoc" id="100000037" />
+            <vocabularyReference name="PreferredVoc" id="100000040" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="VgrHistoryGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Timestamp" name="DateDat" />
+            <dataField dataType="Varchar" name="StatusTxt" />
+            <dataField dataType="Varchar" name="TypeTxt" />
+            <dataField dataType="Varchar" name="UserTxt" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="VgrVocabularyGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Varchar" name="ContentTxt" />
+            <vocabularyReference name="StatusVoc" id="100000065" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="VgrMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="VgrVocabularyRef" targetModule="Vocabulary" multiplicity="1:N">
+          <moduleReferenceItem />
+        </moduleReference>
+      </moduleItem>
+    </module>
+    <module name="Address">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Varchar" name="AdrBankTxt" />
+        <dataField dataType="Varchar" name="AdrBICTxt" />
+        <dataField dataType="Varchar" name="AdrAccountOwnerTxt" />
+        <dataField dataType="Varchar" name="AdrBankNumberTxt" />
+        <dataField dataType="Varchar" name="AdrAccountNoTxt" />
+        <dataField dataType="Varchar" name="AdrIBANTxt" />
+        <dataField dataType="Varchar" name="AdrEducationTxt" />
+        <dataField dataType="Date" name="AdrBirthdayDat" />
+        <dataField dataType="Varchar" name="AdrAcademicTitleTxt" />
+        <dataField dataType="Varchar" name="AdrCityTxt" />
+        <dataField dataType="Varchar" name="AdrAdditionTxt" />
+        <dataField dataType="Varchar" name="AdrDepartmentTxt" />
+        <dataField dataType="Varchar" name="AdrCountryTxt" />
+        <dataField dataType="Varchar" name="AdrForeNameTxt" />
+        <dataField dataType="Varchar" name="AdrOrganisationTxt" />
+        <dataField dataType="Clob" name="AdrNotesClb" />
+        <dataField dataType="Varchar" name="AdrStreetTxt" />
+        <dataField dataType="Varchar" name="AdrPostcodeTxt" />
+        <dataField dataType="Varchar" name="AdrTitleTxt" />
+        <dataField dataType="Varchar" name="AdrSurNameTxt" />
+        <dataField dataType="Varchar" name="AdrPlaceOfBirthTxt" />
+        <dataField dataType="Varchar" name="AdrProfessionTxt" />
+        <vocabularyReference name="AdrGenderVoc" id="100000050" />
+        <vocabularyReference name="AdrFunctionVoc" id="100000028" />
+        <vocabularyReference name="AdrLabelModeVoc" id="100000029" />
+        <vocabularyReference name="AdrSendPostVoc" id="100000040" />
+        <vocabularyReference name="AdrOutputVoc" id="100000030" />
+        <vocabularyReference name="AdrSendEmailVoc" id="100000040" />
+        <virtualField name="AdrSalutationVrt" />
+        <repeatableGroup name="AdrSalutationGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="SalutationTxt" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TemplateVoc" id="100000096" />
+            <vocabularyReference name="TypeVoc" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="AdrCommunicationGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Date" name="DateDat" />
+            <dataField dataType="Varchar" name="SubjectTxt" />
+            <dataField dataType="Varchar" name="UserVoc" />
+            <vocabularyReference name="TypeVoc" id="100000025" />
+            <moduleReference name="AdrCommunicationUserRef" targetModule="User" multiplicity="N:1" />
+            <moduleReference name="AdrCommunicationTemplateRef" targetModule="Template" multiplicity="N:1" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name="AdrContactGrp">
+          <repeatableGroupItem>
+            <dataField dataType="Varchar" name="ValueTxt" />
+            <dataField dataType="Long" name="SortLnu" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" id="100000026" />
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name="AdrAddressGroupRef" targetModule="AddressGroup" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Date" name="ValidityDateDat" />
+            <dataField dataType="Clob" name="NotesClb" />
+            <dataField dataType="Numeric" name="ValueNum" />
+            <dataField dataType="Long" name="InvoiceLnu" />
+            <vocabularyReference name="CurrencyVoc" id="100000036" />
+            <vocabularyReference name="MemberStatusVoc" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="AdrMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Boolean" name="ThumbnailBoo" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name="AdrAddressCre">
+          <compositeItem seqNo="0">
+            <moduleReference name="AdrAddressARef" targetModule="Address" multiplicity="M:N">
+              <moduleReferenceItem>
+                <dataField dataType="Clob" name="NotesClb" />
+                <vocabularyReference name="TypeAVoc" id="100000104" />
+                <vocabularyReference name="TypeBVoc" id="100000104" />
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+          <compositeItem seqNo="1">
+            <moduleReference name="AdrAddressBRef" targetModule="Address" multiplicity="M:N">
+              <moduleReferenceItem>
+                <dataField dataType="Clob" name="NotesClb" />
+                <vocabularyReference name="TypeAVoc" id="100000104" />
+                <vocabularyReference name="TypeBVoc" id="100000104" />
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+    </module>
+    <module name="Parameter">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Time" name="ValueTim" />
+        <dataField dataType="Timestamp" name="ValueTst" />
+        <dataField dataType="Long" name="ValueLnu" />
+        <dataField dataType="Numeric" name="ValueNum" />
+        <dataField dataType="Varchar" name="VocabularyTxt" />
+        <dataField dataType="Varchar" name="ValueTxt" />
+        <dataField dataType="Varchar" name="ValueVoc" />
+        <dataField dataType="Clob" name="ValueClb" />
+        <dataField dataType="Date" name="ValueDat" />
+        <dataField dataType="Varchar" name="NameTxt" />
+        <dataField dataType="Boolean" name="ValueBoo" />
+        <vocabularyReference name="DataTypeVoc" />
+        <virtualField name="ValueVrt" />
+      </moduleItem>
+    </module>
+    <module name="Client">
+      <moduleItem>
+        <systemField dataType="Long" name="__id" />
+        <systemField dataType="Varchar" name="__lastModifiedUser" />
+        <systemField dataType="Timestamp" name="__lastModified" />
+        <systemField dataType="Long" name="__orgUnit" />
+        <dataField dataType="Clob" name="CliNotesClb" />
+        <dataField dataType="Varchar" name="CliNameTxt" />
+        <vocabularyReference name="CliCategoryVoc" id="100000035" />
+        <moduleReference name="CliServerRef" targetModule="Server" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="CliInstanceOKRef" targetModule="Instance" multiplicity="1:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="CliInstanceRef" targetModule="Instance" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+        <moduleReference name="CliAddressRef" targetModule="Address" multiplicity="M:N">
+          <moduleReferenceItem>
+            <dataField dataType="Clob" name="NotesClb" />
+            <vocabularyReference name="TypeVoc" id="100000104" />
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name="CliMultimediaRef" targetModule="Multimedia" multiplicity="M:N">
+          <moduleReferenceItem />
+        </moduleReference>
+      </moduleItem>
+    </module>
+  </modules>
+</application>
