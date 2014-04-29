@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<application xmlns="http://www.zetcom.com/ria/ws/module">
+	<modules>
+		<module name="Multimedia">
+			<moduleItem>
+				<systemField dataType="Long" name="__id"/>
+				<systemField dataType="Varchar" name="__lastModifiedUser"/>
+				<systemField dataType="Timestamp" name="__lastModified"/>
+				<systemField dataType="Long" name="__orgUnit"/>
+				<dataField dataType="Varchar" name="MulAltimaCreationdate0043Txt"/>
+				<dataField dataType="Varchar" name="MulCaptionTxt"/>
+				<dataField dataType="Varchar" name="MulAltimaCreatedby0043Txt"/>
+				<dataField dataType="Clob" name="MulDescription0043Clb"/>
+				<dataField dataType="Date" name="MulDocumentDateDat"/>
+				<dataField dataType="Varchar" name="MulCourtesyTxt"/>
+				<dataField dataType="Varchar" name="MulFileFormatTxt"/>
+				<dataField dataType="Varchar" name="MulDuration0043Txt"/>
+				<dataField dataType="Date" name="MulMutationDat"/>
+				<dataField dataType="Varchar" name="MulMentionObl0043Txt"/>
+				<dataField dataType="Varchar" name="MulOriginalFileTxt"/>
+				<dataField dataType="Clob" name="MulNotesClb"/>
+				<dataField dataType="Varchar" name="MulPhotocreditTxt"/>
+				<dataField dataType="Varchar" name="MulResolutionTxt"/>
+				<dataField dataType="Varchar" name="MulPret0043Txt"/>
+				<dataField dataType="Clob" name="MulSauvInterne0043Clb"/>
+				<dataField dataType="Date" name="MulShootingDateDat"/>
+				<dataField dataType="Varchar" name="MulSizeTxt"/>
+				<dataField dataType="Varchar" name="MulTitleTxt"/>
+				<dataField dataType="Clob" name="MulURLClb"/>
+				<dataField dataType="Varchar" name="MulWeightNum"/>
+				<vocabularyReference id="397" name="MulCategoryVoc"/>
+				<vocabularyReference id="399" name="MulFormatVoc"/>
+				<vocabularyReference id="398" name="MulEMuseumPlus0043Voc"/>
+				<vocabularyReference id="429" name="MulModeExploit0043Voc"/>
+				<vocabularyReference id="400" name="MulInternetVoc"/>
+				<vocabularyReference id="379" name="MulPays0043Txt"/>
+				<vocabularyReference id="440" name="MulRights0043Voc"/>
+				<vocabularyReference id="402" name="MulShootingReasonVoc"/>
+				<vocabularyReference name="MulStatus0043Voc"/>
+				<vocabularyReference id="403" name="MulTypeVoc"/>
+				<vocabularyReference id="404" name="MulUsageVoc"/>
+				<repeatableGroup name="MulLine0043Grp">
+					<repeatableGroupItem>
+						<vocabularyReference id="425" name="LineVoc"/>
+					</repeatableGroupItem>
+				</repeatableGroup>
+				<repeatableGroup name="MulKeyword0043Grp">
+					<repeatableGroupItem>
+						<dataField dataType="Clob" name="NotesClb"/>
+						<vocabularyReference id="424" name="KeywordVoc"/>
+					</repeatableGroupItem>
+				</repeatableGroup>
+				<repeatableGroup name="MulUse0043Grp">
+					<repeatableGroupItem>
+						<dataField dataType="Clob" name="NotesClb"/>
+						<dataField dataType="Date" name="DateToDat"/>
+						<dataField dataType="Varchar" name="DurationTxt"/>
+						<dataField dataType="Boolean" name="CaseUsageBoo"/>
+						<dataField dataType="Date" name="DateFromDat"/>
+						<dataField dataType="Boolean" name="CasePRPBoo"/>
+						<dataField dataType="Boolean" name="CaseTVBoo"/>
+						<dataField dataType="Boolean" name="CasePAEPBoo"/>
+						<dataField dataType="Boolean" name="CasePLVBoo"/>
+						<dataField dataType="Boolean" name="CaseNDBoo"/>
+						<dataField dataType="Boolean" name="CasePackagingBoo"/>
+						<dataField dataType="Boolean" name="CaseEditionBoo"/>
+						<dataField dataType="Boolean" name="CaseInternetBoo"/>
+						<dataField dataType="Boolean" name="CaseAffichageBoo"/>
+						<dataField dataType="Boolean" name="CaseAucunBoo"/>
+						<dataField dataType="Boolean" name="CaseCinemaBoo"/>
+						<dataField dataType="Boolean" name="CaseCircuitBoo"/>
+						<vocabularyReference id="443" name="PlaceVoc"/>
+					</repeatableGroupItem>
+				</repeatableGroup>
+				<repeatableGroup name="MulTitle0043Grp">
+					<repeatableGroupItem>
+						<dataField dataType="Clob" name="NotesClb"/>
+						<dataField dataType="Varchar" name="TitleTxt"/>
+						<vocabularyReference id="446" name="TypeVoc"/>
+					</repeatableGroupItem>
+				</repeatableGroup>
+				<repeatableGroup name="MulDescription0043Grp">
+					<repeatableGroupItem>
+						<dataField dataType="Clob" name="NotesClb"/>
+						<dataField dataType="Clob" name="DescriptionClb"/>
+						<vocabularyReference id="407" name="TypeVoc"/>
+					</repeatableGroupItem>
+				</repeatableGroup>
+				<repeatableGroup name="MulColour0043Grp">
+					<repeatableGroupItem>
+						<dataField dataType="Clob" name="NotesClb"/>
+						<vocabularyReference id="410" name="ColourVoc"/>
+					</repeatableGroupItem>
+				</repeatableGroup>
+				<moduleReference multiplicity="N:1" name="MulPhotographerRef" targetModule="Address">
+					<moduleReferenceItem/>
+				</moduleReference>
+				<moduleReference multiplicity="N:1" name="MulAuthPhotRef" targetModule="Person">
+					<moduleReferenceItem/>
+				</moduleReference>
+				<moduleReference multiplicity="N:1" name="MulAuthorRef" targetModule="Address">
+					<moduleReferenceItem/>
+				</moduleReference>
+				<moduleReference multiplicity="N:1" name="MulAgencyRef" targetModule="Address">
+					<moduleReferenceItem/>
+				</moduleReference>
+				<composite name="MulReferencesCre">
+					<compositeItem seqNo="0">
+						<moduleReference multiplicity="M:N" name="MulAddressRef" targetModule="Address">
+							<moduleReferenceItem>
+								<dataField dataType="Boolean" name="ThumbnailBoo"/>
+							</moduleReferenceItem>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="1">
+						<moduleReference multiplicity="M:N" name="MulObjectRef" targetModule="Object">
+							<moduleReferenceItem>
+								<dataField dataType="Boolean" name="ThumbnailBoo"/>
+							</moduleReferenceItem>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="2">
+						<moduleReference multiplicity="M:N" name="MulPersonRef" targetModule="Person">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="3">
+						<moduleReference multiplicity="M:N" name="MulAccessoryRef" targetModule="Accessory">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="4">
+						<moduleReference multiplicity="M:N" name="MulConservationRef" targetModule="Conservation">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="5">
+						<moduleReference multiplicity="M:N" name="MulAddressGroupRef" targetModule="AddressGroup">
+							<moduleReferenceItem>
+								<dataField dataType="Boolean" name="ThumbnailBoo"/>
+							</moduleReferenceItem>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="6">
+						<moduleReference multiplicity="M:N" name="MulContractRef" targetModule="Contract">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="7">
+						<moduleReference multiplicity="M:N" name="MulLiteratureRef" targetModule="Literature">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="8">
+						<moduleReference multiplicity="M:N" name="MulMovementRef" targetModule="Movement">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="9">
+						<moduleReference multiplicity="M:N" name="MulObjectGroupRef" targetModule="ObjectGroup">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+					<compositeItem seqNo="10">
+						<moduleReference multiplicity="M:N" name="MulExhibitionRef" targetModule="Exhibition">
+							<moduleReferenceItem/>
+						</moduleReference>
+					</compositeItem>
+				</composite>
+			</moduleItem>
+		</module>
+	</modules>
+</application>
