@@ -1,7 +1,13 @@
 # ZetCom RIA API Javascript access
 
-
 The goal is to be able to access RIA api and retrieve information from there.
+
+## Prerequists
+
+### npm libraries
+
+- request : npm install request
+- xml2js : npm install npm2js
 
 ## Questions
 
