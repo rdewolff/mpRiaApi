@@ -9,14 +9,20 @@ ria.setCreditentials('SuperAdmin', 'SuperAdmin');
 ria.setInstanceUrl('https://mp-ria-15.zetcom.com/MpWeb-apParisPuig');
 
 ria._login(function(){
+
+	// ************************************************************************
+	// * Standard function tests 
+	// ************************************************************************
 	
-	// ria.getModuleDefinition('Multimedia', callback);
+	//ria.getModuleDefinition('Multimedia', callback);
+	// ria.getModuleDefinition('Object', callback);
 	
-	// ria.getAllModuleDefinition(callback);
+	//ria.getAllModuleDefinition(callback);
 	
 	//ria.getModuleItem('Multimedia', '446', callback); // TODO not working
 	//ria.getModuleItem('Multimedia', 'MulAltimaCreationdate0043Txt', callback); // TODO not working
 	//ria.getModuleItem('Multimedia', 84, callback); // TODO not working, ID? How to find them? With the search :)
+	// ria.getModuleItem('Object', '65', callback); 
 
 	//ria.getModuleOrgunits('Multimedia', callback); // OK
 
@@ -27,12 +33,12 @@ ria._login(function(){
 		</repeatableGroupItem>
 	</repeatableGroup>
     */
-	//ria.getVocabularyGroup('425', callback); // OK 50% : returned XML seems INVALID ?
+	// ria.getVocabularyGroup('425', callback); // OK 50% : returned XML seems INVALID ?
 	// ria.getVocabularyGroup('397', callback);
-	ria.getVocabularyGroup(373, callback);
+	// ria.getVocabularyGroup(373, callback); // OK
 	
 	// ria.getVocabulary('3676', callback); // OK
-	ria.getVocabulary(3139, callback);
+	// ria.getVocabulary(3139, callback); // OK
 
 	// Body definition : http://www.zetcom.com/ria/ws/module/search/search.xml 
 	// OK!
@@ -40,10 +46,21 @@ ria._login(function(){
 
 
 
+	// ************************************************************************
+	// * Custom function tests 
+	// ************************************************************************
+	//ria.getModuleListAsJson(callback)
+
+
+
+	// Complete test
+	//ria.getModuleItem('Object', '65', callback); 
+	ria.getAllObjectFromModule('Object', callback, 'json');
 
 });
 
 function callback(err, data) {
 	console.dir('error: ' + err);
-	console.dir(data);
+	console.log("Data: %j", data); // show all json format
+
 }
