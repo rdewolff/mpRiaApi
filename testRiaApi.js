@@ -83,8 +83,6 @@ function runMyTests() {
 	console.time('runMyTests');
 	ria.getModuleListAsJson(callback)
 
-
-
 	// Complete test
 	//ria.getModuleItem('Object', '65', callback); 
 	//ria.getAllObjectFromModule('Object', callback, 'json');
