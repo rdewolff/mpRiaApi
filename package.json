@@ -2,7 +2,7 @@
   "name": "mpRiaApi",
   "version": "0.0.1",
   "description": "Library to communicate with MuseumPlus RIA API created by Zetcom",
-  "main": "ria.js",
+  "main": "index.js",
   "dependencies": {
     "request": "~2.34.0",
     "xml2js": "~0.4.2"
