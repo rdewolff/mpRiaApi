@@ -1,0 +1,33 @@
+{
+  "name": "mpRiaApi",
+  "version": "0.0.1",
+  "description": "Library to communicate with MuseumPlus RIA API created by Zetcom",
+  "main": "index.js",
+  "dependencies": {
+    "request": "~2.34.0",
+    "xml2js": "~0.4.2"
+  },
+  "devDependencies": {
+    "htpasswd": "~2.1.1",
+    "http": "~0.0.0",
+    "http-auth": "~2.1.7"
+  },
+  "scripts": {
+    "test": "node testRiaApi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rdewolff/mpRiaApi.git"
+  },
+  "keywords": [
+    "museumplus",
+    "ria",
+    "api"
+  ],
+  "author": "Romain de Wolff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdewolff/mpRiaApi/issues"
+  },
+  "homepage": "https://github.com/rdewolff/mpRiaApi"
+}

@@ -1,14 +1,45 @@
+// lib
 var ria = require('./lib/ria.js');
+var fs = require('fs');
+
+// vars
+var KEY_FILE = 'session.key';
+var ENCODING = 'utf8';
 
 // instance de ZIS - works from within Zetcom network
-//ria.setCreditentials('RDW', 'RDW');
-//ria.setInstanceUrl('https://mp-ria-14.zetcom.com/MpWeb-ZetcomZis');
+// ria.setCreditentials('RDW', 'RDW');
+// ria.setInstanceUrl('https://mp-ria-14.zetcom.com/MpWeb-ZetcomZis');
 
 // instance de test - works from any internet connection
 ria.setCreditentials('SuperAdmin', 'SuperAdmin');
 ria.setInstanceUrl('https://mp-ria-15.zetcom.com/MpWeb-apParisPuig');
 
-ria._login(function(){
+// login if required
+fs.readFile(KEY_FILE, ENCODING, function(err, data){
+	if (err) {
+		console.time('login');
+		ria._login(function(){ 
+			console.timeEnd('login');
+			// try to reuse session to avoid re-login on every request
+			// on login, save the key to the file
+			fs.writeFile(KEY_FILE, ria.getSessionKey(), ENCODING, null);
+			console.log("SAVE KEY " + ria.getSessionKey())
+			// ria.deleteSession(runMyTests); // test delete session
+			runMyTests();
+		});
+	} else {
+		// retrieved key can be wrong or not valid anymore
+		ria.setSessionKey(data);
+		console.log("RETRIEVED KEY " + ria.getSessionKey())
+
+		// ria.deleteSession(runMyTests); // test delete session
+		runMyTests();
+	}
+
+});
+
+
+function runMyTests() {
 
 	// ************************************************************************
 	// * Standard function tests 
@@ -48,19 +79,21 @@ ria._login(function(){
 
 	// ************************************************************************
 	// * Custom function tests 
-	// ************************************************************************
+	// ************************************************************************	
+	console.time('runMyTests');
 	ria.getModuleList(callback, 'array')
-
-
 
 	// Complete test
 	//ria.getModuleItem('Object', '65', callback); 
 	//ria.getAllObjectFromModule('Object', callback, 'json');
 
-});
+}
+
 
 function callback(err, data) {
+	console.timeEnd('runMyTests');
 	console.dir('error: ' + err);
 	console.log("Data: %j", data); // show all json format
 
 }
+

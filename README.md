@@ -7,7 +7,7 @@ The goal is to be able to access RIA api and retrieve information from there.
 ### npm libraries
 
 - request : npm install request
-- xml2js : npm install npm2js
+- xml2js : npm install xml2js
 
 ## Questions
 
