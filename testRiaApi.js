@@ -49,13 +49,13 @@ ria._login(function(){
 	// ************************************************************************
 	// * Custom function tests 
 	// ************************************************************************
-	//ria.getModuleListAsJson(callback)
+	ria.getModuleList(callback, 'array')
 
 
 
 	// Complete test
 	//ria.getModuleItem('Object', '65', callback); 
-	ria.getAllObjectFromModule('Object', callback, 'json');
+	//ria.getAllObjectFromModule('Object', callback, 'json');
 
 });
 
