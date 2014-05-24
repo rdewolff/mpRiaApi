@@ -43,7 +43,7 @@ It will run the basic tests.
 
 ## References
 
-http://doc-muc.zetcom.com/MpRIA/ws/howTo_moduleWebService.html
+ZetCom RIA WebServices : http://www.zetcom.com/ria/ws/
 
 test Web Services : http://www.getpostman.com/link/legacy_jetpacks_blog
 
