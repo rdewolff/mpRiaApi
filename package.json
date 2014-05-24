@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "request": "~2.34.0",
-    "xml2js": "~0.4.2"
+    "xml2js": "~0.4.2",
+    "nconf": "~0.6.0"
   },
   "devDependencies": {
     "htpasswd": "~2.1.1",
@@ -13,7 +14,7 @@
     "http-auth": "~2.1.7"
   },
   "scripts": {
-    "test": "node testRiaApi.js"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",

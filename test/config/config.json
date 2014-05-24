@@ -1,0 +1,7 @@
+{
+    "url": "https://<server/<instance>",
+    "username": "<username>",
+    "password": "<password>",
+    "keyfile" : "session.key",
+    "encoding": "utf8"
+}
