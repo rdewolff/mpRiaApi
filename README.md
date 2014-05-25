@@ -16,6 +16,35 @@ To install all the required libraries, just use npm and run :
 npm install
 ```
 
+Et voilà!
+
+## Usage
+
+This is a simple usage example :
+
+```javascript
+// call the lib
+var ria = require('mpRiaApi');
+
+// set the user, pass and url
+ria.setCreditentials("username", "password");
+ria.setInstanceUrl("https://mp-ria-X.zetcom.com/instanceName");
+
+// authenticate
+ria._login(function() {
+  // get the all the available module
+  ria.getModuleList(function(err, data) {
+      console.dir('\nError: ' + err);
+      console.log("\nData: %j", data);
+    }, 'array');
+});
+
+```
+
+You can use a provided test file in ```/test``` folder. Please edit ```/test/config/config.json``` first.
+
+Then you can execute the test with ```npm test```.
+
 ## Tests
 
 ### Configuration
