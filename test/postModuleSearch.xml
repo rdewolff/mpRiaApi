@@ -1,0 +1,2329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns=\"http://www.zetcom.com/ria/ws/module\">
+  <modules>
+    <module name=\"Object\">
+      <moduleItem id=\"61\" uuid=\"0431471b-b746-46dd-8d0b-45a64a3adbdf\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>61</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>SuperAdmin</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-06 11:00:53.373</value>
+          <formattedValue language=\"en\">05/06/2014 11:00</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>NinaRicci</value>
+        </systemField>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\">
+          <value>2010</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\">
+          <value>34.36</value>
+        </dataField>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"307\">
+            <dataField dataType=\"Clob\" name=\"NotesClb\">
+              <value>ergsgtrger</value>
+            </dataField>
+            <dataField dataType=\"Date\" name=\"DateFromDat\">
+              <value>2015-10-09Z</value>
+              <formattedValue language=\"en\">10/09/2015</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"PlaceVoc\" id=\"443\">
+              <vocabularyReferenceItem id=\"3527\">
+                <formattedValue language=\"en\">South America</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem id=\"349\">
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\">
+              <value>NR.2013.409.1à3</value>
+            </dataField>
+            <dataField dataType=\"Clob\" name=\"NotesClb\">
+              <value>feez</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\">
+              <value>36</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>34</value>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem id=\"400\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"4208\">
+                <formattedValue language=\"en\">Seaweed Extract </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim2DGrp\">
+              <repeatableGroupItem id=\"313\">
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\">
+                  <value>dsfrf</value>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>12.000000</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+                <dataField dataType=\"Clob\" name=\"NotesClb\">
+                  <value>test</value>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2829\">
+                    <formattedValue language=\"en\">cm</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\">
+                  <vocabularyReferenceItem id=\"3289\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <repeatableGroup name=\"ObjDim3DGrp\">
+              <repeatableGroupItem id=\"312\">
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>12.000000</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"TypeVoc\" id=\"413\">
+                  <vocabularyReferenceItem id=\"3297\">
+                    <formattedValue language=\"en\">With frame</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2829\">
+                    <formattedValue language=\"en\">cm</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"2\">
+            <repeatableGroup name=\"ObjDimTailleGrp\">
+              <repeatableGroupItem id=\"311\">
+                <dataField dataType=\"Numeric\" name=\"TailleNum\">
+                  <value>12.000000</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"419\">
+                  <vocabularyReferenceItem id=\"3307\">
+                    <formattedValue language=\"en\">FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"415\">
+                  <vocabularyReferenceItem id=\"3299\">
+                    <formattedValue language=\"en\">Size (Feet)</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"3\">
+            <repeatableGroup name=\"ObjDimWeightGrp\">
+              <repeatableGroupItem id=\"310\">
+                <dataField dataType=\"Numeric\" name=\"WeightNum\">
+                  <value>12.000000</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"370\">
+                  <vocabularyReferenceItem id=\"2832\">
+                    <formattedValue language=\"en\">g</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"4\">
+            <repeatableGroup name=\"ObjDimContenanceGrp\">
+              <repeatableGroupItem id=\"309\">
+                <dataField dataType=\"Numeric\" name=\"VolumeNum\">
+                  <value>12.000000</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"418\">
+                  <vocabularyReferenceItem id=\"3306\">
+                    <formattedValue language=\"en\">L</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"5\">
+            <repeatableGroup name=\"ObjDimDurationGrp\">
+              <repeatableGroupItem id=\"308\">
+                <dataField dataType=\"Long\" name=\"SecondsLnu\">
+                  <value>12</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+                <dataField dataType=\"Long\" name=\"MinutesLnu\">
+                  <value>12</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem id=\"348\">
+                <dataField dataType=\"Clob\" name=\"NotesClb\">
+                  <value>test</value>
+                </dataField>
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>test</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+      <moduleItem id=\"62\" uuid=\"45262944-09e2-49e3-a858-1cefc727930e\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>62</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>lfournis</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-06 11:01:59.968</value>
+          <formattedValue language=\"en\">05/06/2014 11:01</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>DefaultOrgUnit</value>
+        </systemField>
+        <dataField dataType=\"Varchar\" name=\"ObjDisplayModeTxt\">
+          <value>Aquarelle sensible à la lumière - peu d'éclairage (50lux)</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\">
+          <value>vers 1990</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjAlterationFactorTxt\">
+          <value>lumière</value>
+        </dataField>
+        <dataField dataType=\"Date\" name=\"ObjAcquisitionDateDat\">
+          <value>1990-01-01Z</value>
+          <formattedValue language=\"en\">01/01/1990</formattedValue>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjMentionObl0043Txt\">
+          <value>©…Garouste et Bonetti</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\">
+          <value>NR.2013.409.1à3</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjFramingTxt\">
+          <value>non</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjHumidityTxt\">
+          <value>35 – 40 %</value>
+        </dataField>
+        <dataField dataType=\"Clob\" name=\"ObjInscription0043Clb\">
+          <value>Non signé</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLocationDetail0043Txt\">
+          <value>Boite GM3</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLuminosityTxt\">
+          <value>50 lux</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjTemperatureTxt\">
+          <value>18 – 20°C</value>
+        </dataField>
+        <vocabularyReference name=\"ObjEMuseumPlusVoc\" id=\"421\">
+          <vocabularyReferenceItem id=\"3313\">
+            <formattedValue language=\"en\">Highlights</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjCategoryVoc\" id=\"408\">
+          <vocabularyReferenceItem id=\"3824\">
+            <formattedValue language=\"en\">Painting</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjAcquisitionModeVoc\" id=\"405\">
+          <vocabularyReferenceItem id=\"3241\">
+            <formattedValue language=\"en\">Heritage</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjModeExploit0043Voc\" id=\"429\">
+          <vocabularyReferenceItem id=\"3436\">
+            <formattedValue language=\"en\">Exhibition</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjMonitoringIntermittencyVoc\" id=\"430\">
+          <vocabularyReferenceItem id=\"3440\">
+            <formattedValue language=\"en\">Yearly</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjNormalLocationVoc\" id=\"374\">
+          <vocabularyReferenceItem id=\"3838\">
+            <formattedValue language=\"en\">Puig France, 6 boulevard du Parc,  92200 Neuilly-sur-Seine</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjStatus0043Voc\" id=\"383\">
+          <vocabularyReferenceItem id=\"3097\">
+            <formattedValue language=\"en\">Pending validation after creation</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjRights0043Voc\" id=\"440\">
+          <vocabularyReferenceItem id=\"3484\">
+            <formattedValue language=\"en\">No but allowed for institutional and historic reasons only</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <repeatableGroup name=\"ObjRefgeo0043Grp\">
+          <repeatableGroupItem id=\"352\">
+            <vocabularyReference name=\"TypeVoc\" id=\"435\">
+              <vocabularyReferenceItem id=\"3464\">
+                <formattedValue language=\"en\">Creation place</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"RefVoc\" id=\"379\">
+              <vocabularyReferenceItem id=\"3018\">
+                <formattedValue language=\"en\">France  </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjOtherNumberGrp\">
+          <repeatableGroupItem id=\"314\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>SAUDD1NR2013</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3459\">
+                <formattedValue language=\"en\">Stock information</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjPrescriptions0043Grp\">
+          <repeatableGroupItem id=\"358\">
+            <vocabularyReference name=\"TypeVoc\" id=\"437\">
+              <vocabularyReferenceItem id=\"3476\">
+                <formattedValue language=\"en\">Dust</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjCurrentLocationGrp\">
+          <repeatableGroupItem id=\"351\">
+            <dataField dataType=\"Date\" name=\"DateFromDat\">
+              <value>2014-02-03Z</value>
+              <formattedValue language=\"en\">02/03/2014</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"LocationVoc\" id=\"374\">
+              <vocabularyReferenceItem id=\"3838\">
+                <formattedValue language=\"en\">Puig France, 6 boulevard du Parc,  92200 Neuilly-sur-Seine</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"ReasonVoc\" id=\"376\">
+              <vocabularyReferenceItem id=\"2878\">
+                <formattedValue language=\"en\">Temporary exhibition</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"StatusVoc\" id=\"377\">
+              <vocabularyReferenceItem id=\"2893\">
+                <formattedValue language=\"en\">Current</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjColour0043Grp\">
+          <repeatableGroupItem id=\"372\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3281\">
+                <formattedValue language=\"en\">Red</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"371\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3280\">
+                <formattedValue language=\"en\">Green</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"370\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3271\">
+                <formattedValue language=\"en\">Blue</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"369\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3283\">
+                <formattedValue language=\"en\">Yellow</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"326\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjBriefDescriptionGrp\">
+          <repeatableGroupItem id=\"316\">
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\">
+              <value>Aquarelle réalisée par Garouste et Bonetti pour l'eau de parfum Liberté Acidulée des Belles de Ricci</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\">
+              <vocabularyReferenceItem id=\"3248\">
+                <formattedValue language=\"en\">FR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem id=\"322\">
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\">
+              <value>0000</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\">
+              <value>409.1à3</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR.2013</value>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjLine0043Grp\">
+          <repeatableGroupItem id=\"318\">
+            <vocabularyReference name=\"LineVoc\" id=\"425\">
+              <vocabularyReferenceItem id=\"3349\">
+                <formattedValue language=\"en\">Les Belles de Ricci</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem id=\"355\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"3330\">
+                <formattedValue language=\"en\">Ingredient</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name=\"ObjAccessoryRef\" targetModule=\"Accessory\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"32\" uuid=\"27dde07c-f03c-4e4c-be61-e5d1f2a17919\" seqNo=\"0\">
+            <formattedValue language=\"en\">Packaging, 369, Bois</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjExhibitionRef\" targetModule=\"Exhibition\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"80\" uuid=\"91728ce3-1286-472a-8555-80ed6707c631\" seqNo=\"0\">
+            <formattedValue language=\"en\">Venue, \"Le Parfum doit être une oeuvre d'art\", 09/17/2003 - 01/05/2004</formattedValue>
+          </moduleReferenceItem>
+          <moduleReferenceItem moduleItemId=\"84\" uuid=\"2dddfc31-0678-4744-b6cf-79964d3a4ba6\" seqNo=\"1\">
+            <formattedValue language=\"en\">Itinerant exhibition, L'art du parfum, 09/17/2003 - 04/15/2004</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjContractRef\" targetModule=\"Contract\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"42\" uuid=\"6f3f4d2d-072b-44ee-a35d-3fa3e6e9bf40\" seqNo=\"0\">
+            <formattedValue language=\"en\">Accepted: External loan, Exposition / Chartes, 09/17/2003 - 01/05/2004</formattedValue>
+            <dataField dataType=\"Numeric\" name=\"InsuranceValueNum\">
+              <value>500.000000</value>
+              <formattedValue language=\"en\">500</formattedValue>
+            </dataField>
+            <dataField dataType=\"Numeric\" name=\"ConversionRateNum\">
+              <value>1.000000</value>
+              <formattedValue language=\"en\">1</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"DecisionVoc\">
+              <vocabularyReferenceItem>
+                <formattedValue language=\"en\">Accepted</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"CurrencyVoc\" id=\"368\">
+              <vocabularyReferenceItem id=\"2706\">
+                <formattedValue language=\"en\">EUR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjConservationRef\" targetModule=\"Conservation\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"41\" uuid=\"4e1b0696-89a8-467a-b6d8-69be442ed84f\" seqNo=\"0\">
+            <formattedValue language=\"en\">Condition report, 09/30/2014 - 10/11/2014, Bon état de conservation</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjPerAssociationRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"58\" uuid=\"6615a3c3-0f90-4fa9-8fb5-4bddcd154326\" seqNo=\"0\">
+            <formattedValue language=\"en\">Elisabeth Garouste, Designer</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjObjectGroupsRef\" targetModule=\"ObjectGroup\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"21\" uuid=\"1517817c-9e6c-4bd4-adf8-9a174e93e5a6\" seqNo=\"0\">
+            <formattedValue language=\"en\">Projet Garouste et Bonetti - Liberté Acidulée 1</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name=\"ObjMaterialSupportCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjMaterialGrp\">
+              <repeatableGroupItem id=\"323\">
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\">
+                  <vocabularyReferenceItem id=\"3405\">
+                    <formattedValue language=\"en\">Paper</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjMaterialTechniqueCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjTechniqueGrp\">
+              <repeatableGroupItem id=\"368\">
+                <vocabularyReference name=\"TechniqueVoc\" id=\"441\">
+                  <vocabularyReferenceItem id=\"3517\">
+                    <formattedValue language=\"en\">Watercolour</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim2DGrp\">
+              <repeatableGroupItem id=\"353\">
+                <dataField dataType=\"Numeric\" name=\"SecondNum\">
+                  <value>29.700000</value>
+                  <formattedValue language=\"en\">29.7</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>21.000000</value>
+                  <formattedValue language=\"en\">21</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2829\">
+                    <formattedValue language=\"en\">cm</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\">
+                  <vocabularyReferenceItem id=\"3289\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectCre\">
+          <compositeItem seqNo=\"0\">
+            <moduleReference name=\"ObjObjectARef\" targetModule=\"Object\" multiplicity=\"M:N\">
+              <moduleReferenceItem moduleItemId=\"67\" uuid=\"83499686-0c09-4fd3-b3a9-0e03e3d02615\" seqNo=\"0\">
+                <formattedValue language=\"en\">NR.2013.410.1à3, Spirale Olfactive - Liberté Acidulée, Elisabeth Garouste, vers 1990</formattedValue>
+                <vocabularyReference name=\"TypeAVoc\">
+                  <vocabularyReferenceItem>
+                    <formattedValue language=\"en\">Part of</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <moduleReference name=\"ObjObjectBRef\" targetModule=\"Object\" multiplicity=\"M:N\">
+              <moduleReferenceItem moduleItemId=\"67\" uuid=\"83499686-0c09-4fd3-b3a9-0e03e3d02615\" seqNo=\"0\">
+                <formattedValue language=\"en\">NR.2013.410.1à3, Spirale Olfactive - Liberté Acidulée, Elisabeth Garouste, vers 1990</formattedValue>
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem id=\"315\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Liberté Acidulée</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+      <moduleItem id=\"68\" uuid=\"c70de3fb-8d34-4eee-8853-b84b2c1377db\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>68</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>lfournis</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-06 11:02:21.899</value>
+          <formattedValue language=\"en\">05/06/2014 11:02</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>DefaultOrgUnit</value>
+        </systemField>
+        <dataField dataType=\"Varchar\" name=\"ObjDisplayModeTxt\">
+          <value>Ne pas exposer à même le sol - prévoir un piedestal</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\">
+          <value>début des années 1950</value>
+        </dataField>
+        <dataField dataType=\"Clob\" name=\"ObjAssemblyClb\">
+          <value>Prévoir un piedestal pour l'exposition</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\">
+          <value>NR.2013.213</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjFramingTxt\">
+          <value>Boite de transport</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjHumidityTxt\">
+          <value>35 – 40 %</value>
+        </dataField>
+        <dataField dataType=\"Clob\" name=\"ObjHandlingRecommendationClb\">
+          <value>A manipuler avec des gants - suivre les instructions de présentation sur la boite</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLuminosityTxt\">
+          <value>100 lux</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjTemperatureTxt\">
+          <value>18 – 20°C</value>
+        </dataField>
+        <vocabularyReference name=\"ObjEMuseumPlusVoc\" id=\"421\">
+          <vocabularyReferenceItem id=\"3314\">
+            <formattedValue language=\"en\">Yes</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjCategoryVoc\" id=\"408\">
+          <vocabularyReferenceItem id=\"3824\">
+            <formattedValue language=\"en\">Painting</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjModeExploit0043Voc\" id=\"429\">
+          <vocabularyReferenceItem id=\"3436\">
+            <formattedValue language=\"en\">Exhibition</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjMonitoringIntermittencyVoc\" id=\"430\">
+          <vocabularyReferenceItem id=\"3440\">
+            <formattedValue language=\"en\">Yearly</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjNormalLocationVoc\" id=\"374\">
+          <vocabularyReferenceItem id=\"3838\">
+            <formattedValue language=\"en\">Puig France, 6 boulevard du Parc,  92200 Neuilly-sur-Seine</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjStatus0043Voc\" id=\"383\">
+          <vocabularyReferenceItem id=\"3097\">
+            <formattedValue language=\"en\">Pending validation after creation</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjRights0043Voc\" id=\"440\">
+          <vocabularyReferenceItem id=\"3484\">
+            <formattedValue language=\"en\">No but allowed for institutional and historic reasons only</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <repeatableGroup name=\"ObjRefgeo0043Grp\">
+          <repeatableGroupItem id=\"465\">
+            <vocabularyReference name=\"TypeVoc\" id=\"435\">
+              <vocabularyReferenceItem id=\"3464\">
+                <formattedValue language=\"en\">Creation place</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"RefVoc\" id=\"379\">
+              <vocabularyReferenceItem id=\"3018\">
+                <formattedValue language=\"en\">France  </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjOtherNumberGrp\">
+          <repeatableGroupItem id=\"462\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR16089 </value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3461\">
+                <formattedValue language=\"en\">Altima number</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"453\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>PRF2012A099</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3459\">
+                <formattedValue language=\"en\">Stock information</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjColour0043Grp\">
+          <repeatableGroupItem id=\"463\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3283\">
+                <formattedValue language=\"en\">Yellow</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"454\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3271\">
+                <formattedValue language=\"en\">Blue</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"455\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjBriefDescriptionGrp\">
+          <repeatableGroupItem id=\"467\">
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\">
+              <value>Paravent composé de 3 panneaux maintenus les uns aux autres par des charnières.\nPeint à la gouache par Dimitri Bouchène</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\">
+              <vocabularyReferenceItem id=\"3248\">
+                <formattedValue language=\"en\">FR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem id=\"468\">
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\">
+              <value>NR.2013.432.1à2</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\">
+              <value>213</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR.2013</value>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjLine0043Grp\">
+          <repeatableGroupItem id=\"460\">
+            <vocabularyReference name=\"LineVoc\" id=\"425\">
+              <vocabularyReferenceItem id=\"3351\">
+                <formattedValue language=\"en\">L’Air du Temps</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem id=\"456\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"4130\">
+                <formattedValue language=\"en\">Bird</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name=\"ObjLiteratureRef\" targetModule=\"Literature\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"23\" uuid=\"957d6181-b753-4d08-a89f-ac2284cc6ee8\" seqNo=\"0\">
+            <formattedValue language=\"en\">Citation : Restoration report, Restauration du paravent de Dimitri Bouchène, Elodie Enard , le 23 mai 2013</formattedValue>
+            <vocabularyReference name=\"TypeVoc\">
+              <vocabularyReferenceItem>
+                <formattedValue language=\"en\">Citation</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjPerAssociationRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"62\" uuid=\"8f0d9f63-75c1-4615-80f9-c6725dd374c2\" seqNo=\"0\">
+            <formattedValue language=\"en\">Dimitri Bouchène, Painter</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name=\"ObjMaterialSupportCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjMaterialGrp\">
+              <repeatableGroupItem id=\"466\">
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\">
+                  <vocabularyReferenceItem id=\"3426\">
+                    <formattedValue language=\"en\">Cotton</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjMaterialTechniqueCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjTechniqueGrp\">
+              <repeatableGroupItem id=\"469\">
+                <vocabularyReference name=\"TechniqueVoc\" id=\"441\">
+                  <vocabularyReferenceItem id=\"3497\">
+                    <formattedValue language=\"en\">Gouache</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim2DGrp\">
+              <repeatableGroupItem id=\"471\">
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\">
+                  <value>panneaux dépliés</value>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"SecondNum\">
+                  <value>1.110000</value>
+                  <formattedValue language=\"en\">1.11</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>1.500000</value>
+                  <formattedValue language=\"en\">1.5</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2828\">
+                    <formattedValue language=\"en\">m</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\">
+                  <vocabularyReferenceItem id=\"3289\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem id=\"457\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Paravent peint par Dimitri Bouchène</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+              <repeatableGroupItem id=\"472\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Screen painted by Dimitri Bouchène</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+      <moduleItem id=\"67\" uuid=\"83499686-0c09-4fd3-b3a9-0e03e3d02615\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>67</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>cf</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-15 10:31:40.033</value>
+          <formattedValue language=\"en\">05/15/2014 10:31</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>NoticesProvisoires</value>
+        </systemField>
+        <dataField dataType=\"Varchar\" name=\"ObjDisplayModeTxt\">
+          <value>Aquarelle sensible à la lumière - peu d'éclairage (50lux)</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\">
+          <value>vers 1990</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjAlterationFactorTxt\">
+          <value>lumière</value>
+        </dataField>
+        <dataField dataType=\"Date\" name=\"ObjAcquisitionDateDat\">
+          <value>1990-01-01Z</value>
+          <formattedValue language=\"en\">01/01/1990</formattedValue>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjMentionObl0043Txt\">
+          <value>©…Garouste et Bonetti</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\">
+          <value>NR.2013.410.1à3</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjFramingTxt\">
+          <value>non</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjHumidityTxt\">
+          <value>35 – 40 %</value>
+        </dataField>
+        <dataField dataType=\"Clob\" name=\"ObjInscription0043Clb\">
+          <value>Non signé</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLocationDetail0043Txt\">
+          <value>Boite GM3</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLuminosityTxt\">
+          <value>50 lux</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjTemperatureTxt\">
+          <value>18 – 20°C</value>
+        </dataField>
+        <vocabularyReference name=\"ObjEMuseumPlusVoc\" id=\"421\">
+          <vocabularyReferenceItem id=\"3314\">
+            <formattedValue language=\"en\">Yes</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjCategoryVoc\" id=\"408\">
+          <vocabularyReferenceItem id=\"3820\">
+            <formattedValue language=\"en\">Sketch / Drawing </formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjAcquisitionModeVoc\" id=\"405\">
+          <vocabularyReferenceItem id=\"3241\">
+            <formattedValue language=\"en\">Heritage</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjModeExploit0043Voc\" id=\"429\">
+          <vocabularyReferenceItem id=\"3436\">
+            <formattedValue language=\"en\">Exhibition</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjMonitoringIntermittencyVoc\" id=\"430\">
+          <vocabularyReferenceItem id=\"3440\">
+            <formattedValue language=\"en\">Yearly</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjNormalLocationVoc\" id=\"374\">
+          <vocabularyReferenceItem id=\"3838\">
+            <formattedValue language=\"en\">Puig France, 6 boulevard du Parc,  92200 Neuilly-sur-Seine</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjStatus0043Voc\" id=\"383\">
+          <vocabularyReferenceItem id=\"3097\">
+            <formattedValue language=\"en\">Pending validation after creation</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjRights0043Voc\" id=\"440\">
+          <vocabularyReferenceItem id=\"3484\">
+            <formattedValue language=\"en\">No but allowed for institutional and historic reasons only</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <repeatableGroup name=\"ObjRefgeo0043Grp\">
+          <repeatableGroupItem id=\"436\">
+            <vocabularyReference name=\"TypeVoc\" id=\"435\">
+              <vocabularyReferenceItem id=\"3464\">
+                <formattedValue language=\"en\">Creation place</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"RefVoc\" id=\"379\">
+              <vocabularyReferenceItem id=\"3018\">
+                <formattedValue language=\"en\">France  </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjOtherNumberGrp\">
+          <repeatableGroupItem id=\"431\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>SAUDD1NR2002</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3459\">
+                <formattedValue language=\"en\">Stock information</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"439\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR1612 </value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3461\">
+                <formattedValue language=\"en\">Altima number</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjPrescriptions0043Grp\">
+          <repeatableGroupItem id=\"445\">
+            <vocabularyReference name=\"TypeVoc\" id=\"437\">
+              <vocabularyReferenceItem id=\"3476\">
+                <formattedValue language=\"en\">Dust</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjCurrentLocationGrp\">
+          <repeatableGroupItem id=\"432\">
+            <dataField dataType=\"Date\" name=\"DateFromDat\">
+              <value>2014-02-03Z</value>
+              <formattedValue language=\"en\">02/03/2014</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"LocationVoc\" id=\"374\">
+              <vocabularyReferenceItem id=\"3838\">
+                <formattedValue language=\"en\">Puig France, 6 boulevard du Parc,  92200 Neuilly-sur-Seine</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"ReasonVoc\" id=\"376\">
+              <vocabularyReferenceItem id=\"2878\">
+                <formattedValue language=\"en\">Temporary exhibition</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"StatusVoc\" id=\"377\">
+              <vocabularyReferenceItem id=\"2893\">
+                <formattedValue language=\"en\">Current</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"481\">
+            <vocabularyReference name=\"LocationVoc\" id=\"374\">
+              <vocabularyReferenceItem id=\"3851\">
+                <formattedValue language=\"en\">Armoire 2</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"ReasonVoc\" id=\"376\">
+              <vocabularyReferenceItem id=\"2879\">
+                <formattedValue language=\"en\">Move</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"StatusVoc\" id=\"377\">
+              <vocabularyReferenceItem id=\"2893\">
+                <formattedValue language=\"en\">Current</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjColour0043Grp\">
+          <repeatableGroupItem id=\"440\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3281\">
+                <formattedValue language=\"en\">Red</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"433\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3280\">
+                <formattedValue language=\"en\">Green</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"438\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3271\">
+                <formattedValue language=\"en\">Blue</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"444\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3283\">
+                <formattedValue language=\"en\">Yellow</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"434\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjBriefDescriptionGrp\">
+          <repeatableGroupItem id=\"437\">
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\">
+              <value>Aquarelle réalisée par Garouste et Bonetti pour l'eau de parfum Liberté Acidulée des Belles de Ricci</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\">
+              <vocabularyReferenceItem id=\"3248\">
+                <formattedValue language=\"en\">FR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem id=\"430\">
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\">
+              <value>0000</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\">
+              <value>410.1à3</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR.2013</value>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjLine0043Grp\">
+          <repeatableGroupItem id=\"451\">
+            <vocabularyReference name=\"LineVoc\" id=\"425\">
+              <vocabularyReferenceItem id=\"3349\">
+                <formattedValue language=\"en\">Les Belles de Ricci</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem id=\"443\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"3330\">
+                <formattedValue language=\"en\">Ingredient</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name=\"ObjAccessoryRef\" targetModule=\"Accessory\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"32\" uuid=\"27dde07c-f03c-4e4c-be61-e5d1f2a17919\" seqNo=\"0\">
+            <formattedValue language=\"en\">Packaging, 369, Bois</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjExhibitionRef\" targetModule=\"Exhibition\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"80\" uuid=\"91728ce3-1286-472a-8555-80ed6707c631\" seqNo=\"0\">
+            <formattedValue language=\"en\">Venue, \"Le Parfum doit être une oeuvre d'art\", 09/17/2003 - 01/05/2004</formattedValue>
+          </moduleReferenceItem>
+          <moduleReferenceItem moduleItemId=\"84\" uuid=\"2dddfc31-0678-4744-b6cf-79964d3a4ba6\" seqNo=\"1\">
+            <formattedValue language=\"en\">Itinerant exhibition, L'art du parfum, 09/17/2003 - 04/15/2004</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjContractRef\" targetModule=\"Contract\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"42\" uuid=\"6f3f4d2d-072b-44ee-a35d-3fa3e6e9bf40\" seqNo=\"0\">
+            <formattedValue language=\"en\">Accepted: External loan, Exposition / Chartes, 09/17/2003 - 01/05/2004</formattedValue>
+            <dataField dataType=\"Numeric\" name=\"InsuranceValueNum\">
+              <value>500.000000</value>
+              <formattedValue language=\"en\">500</formattedValue>
+            </dataField>
+            <dataField dataType=\"Numeric\" name=\"ConversionRateNum\">
+              <value>1.000000</value>
+              <formattedValue language=\"en\">1</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"DecisionVoc\">
+              <vocabularyReferenceItem>
+                <formattedValue language=\"en\">Accepted</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"CurrencyVoc\" id=\"368\">
+              <vocabularyReferenceItem id=\"2706\">
+                <formattedValue language=\"en\">EUR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjConservationRef\" targetModule=\"Conservation\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"41\" uuid=\"4e1b0696-89a8-467a-b6d8-69be442ed84f\" seqNo=\"0\">
+            <formattedValue language=\"en\">Condition report, 09/30/2014 - 10/11/2014, Bon état de conservation</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjPerAssociationRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"58\" uuid=\"6615a3c3-0f90-4fa9-8fb5-4bddcd154326\" seqNo=\"0\">
+            <formattedValue language=\"en\">Elisabeth Garouste, Designer</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjObjectGroupsRef\" targetModule=\"ObjectGroup\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"21\" uuid=\"1517817c-9e6c-4bd4-adf8-9a174e93e5a6\" seqNo=\"0\">
+            <formattedValue language=\"en\">Projet Garouste et Bonetti - Liberté Acidulée 1</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name=\"ObjMaterialSupportCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjMaterialGrp\">
+              <repeatableGroupItem id=\"429\">
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\">
+                  <vocabularyReferenceItem id=\"3405\">
+                    <formattedValue language=\"en\">Paper</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjMaterialTechniqueCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjTechniqueGrp\">
+              <repeatableGroupItem id=\"435\">
+                <vocabularyReference name=\"TechniqueVoc\" id=\"441\">
+                  <vocabularyReferenceItem id=\"3490\">
+                    <formattedValue language=\"en\">Felt Pen</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim2DGrp\">
+              <repeatableGroupItem id=\"446\">
+                <dataField dataType=\"Numeric\" name=\"SecondNum\">
+                  <value>29.700000</value>
+                  <formattedValue language=\"en\">29.7</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>21.000000</value>
+                  <formattedValue language=\"en\">21</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2829\">
+                    <formattedValue language=\"en\">cm</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\">
+                  <vocabularyReferenceItem id=\"3289\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+              <repeatableGroupItem id=\"483\">
+                <dataField dataType=\"Numeric\" name=\"SecondNum\">
+                  <value>23.000000</value>
+                  <formattedValue language=\"en\">23</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>21.000000</value>
+                  <formattedValue language=\"en\">21</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2829\">
+                    <formattedValue language=\"en\">cm</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\">
+                  <vocabularyReferenceItem id=\"3289\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectCre\">
+          <compositeItem seqNo=\"0\">
+            <moduleReference name=\"ObjObjectARef\" targetModule=\"Object\" multiplicity=\"M:N\">
+              <moduleReferenceItem moduleItemId=\"62\" uuid=\"45262944-09e2-49e3-a858-1cefc727930e\" seqNo=\"0\">
+                <formattedValue language=\"en\">NR.2013.409.1à3, Liberté Acidulée, Elisabeth Garouste, vers 1990</formattedValue>
+                <vocabularyReference name=\"TypeAVoc\">
+                  <vocabularyReferenceItem>
+                    <formattedValue language=\"en\">Part of</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <moduleReference name=\"ObjObjectBRef\" targetModule=\"Object\" multiplicity=\"M:N\">
+              <moduleReferenceItem moduleItemId=\"62\" uuid=\"45262944-09e2-49e3-a858-1cefc727930e\" seqNo=\"0\">
+                <formattedValue language=\"en\">NR.2013.409.1à3, Liberté Acidulée, Elisabeth Garouste, vers 1990</formattedValue>
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem id=\"447\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Spirale Olfactive - Liberté Acidulée</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+      <moduleItem id=\"65\" uuid=\"6e14820f-692c-4e85-ac84-72ff1e9c0650\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>65</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>lfournis</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-06 11:01:49.25</value>
+          <formattedValue language=\"en\">05/06/2014 11:01</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>DefaultOrgUnit</value>
+        </systemField>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\">
+          <value>1981</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjAlterationFactorTxt\">
+          <value>lumière - manipulation</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjMentionObl0043Txt\">
+          <value>©…David Hamilton</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\">
+          <value>NR.2013..432.1à2</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjHumidityTxt\">
+          <value>35 – 40 %</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLocationDetail0043Txt\">
+          <value>Classeur PM1</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLuminosityTxt\">
+          <value>50 lux</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjTemperatureTxt\">
+          <value>18 – 20°C</value>
+        </dataField>
+        <vocabularyReference name=\"ObjEMuseumPlusVoc\" id=\"421\">
+          <vocabularyReferenceItem id=\"3314\">
+            <formattedValue language=\"en\">Yes</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjCategoryVoc\" id=\"408\">
+          <vocabularyReferenceItem id=\"4108\">
+            <formattedValue language=\"en\">Slide / Ektachrome</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjAcquisitionModeVoc\" id=\"405\">
+          <vocabularyReferenceItem id=\"3241\">
+            <formattedValue language=\"en\">Heritage</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjModeExploit0043Voc\" id=\"429\">
+          <vocabularyReferenceItem id=\"3436\">
+            <formattedValue language=\"en\">Exhibition</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjNormalLocationVoc\" id=\"374\">
+          <vocabularyReferenceItem id=\"3838\">
+            <formattedValue language=\"en\">Puig France, 6 boulevard du Parc,  92200 Neuilly-sur-Seine</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjStatus0043Voc\" id=\"383\">
+          <vocabularyReferenceItem id=\"3097\">
+            <formattedValue language=\"en\">Pending validation after creation</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjRights0043Voc\" id=\"440\">
+          <vocabularyReferenceItem id=\"3484\">
+            <formattedValue language=\"en\">No but allowed for institutional and historic reasons only</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <repeatableGroup name=\"ObjRefgeo0043Grp\">
+          <repeatableGroupItem id=\"397\">
+            <vocabularyReference name=\"TypeVoc\" id=\"435\">
+              <vocabularyReferenceItem id=\"3464\">
+                <formattedValue language=\"en\">Creation place</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"RefVoc\" id=\"379\">
+              <vocabularyReferenceItem id=\"3018\">
+                <formattedValue language=\"en\">France  </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjOtherNumberGrp\">
+          <repeatableGroupItem id=\"398\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR2675 </value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3461\">
+                <formattedValue language=\"en\">Altima number</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjColour0043Grp\">
+          <repeatableGroupItem id=\"405\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3271\">
+                <formattedValue language=\"en\">Blue</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"403\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3277\">
+                <formattedValue language=\"en\">Beige</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"406\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjBriefDescriptionGrp\">
+          <repeatableGroupItem id=\"394\">
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\">
+              <value>Publicité L'Air du Temps</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\">
+              <vocabularyReferenceItem id=\"3248\">
+                <formattedValue language=\"en\">FR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"476\">
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\">
+              <value>L'Air du Temps advertising</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\">
+              <vocabularyReferenceItem id=\"3247\">
+                <formattedValue language=\"en\">EN</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem id=\"396\">
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\">
+              <value>NR.2013.432.1à2</value>
+            </dataField>
+            <dataField dataType=\"Clob\" name=\"NotesClb\">
+              <value>Il existe deux exemplaires de cet ektachrome</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\">
+              <value>432.1à2</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR.2013.</value>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjLine0043Grp\">
+          <repeatableGroupItem id=\"399\">
+            <vocabularyReference name=\"LineVoc\" id=\"425\">
+              <vocabularyReferenceItem id=\"3351\">
+                <formattedValue language=\"en\">L’Air du Temps</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem id=\"401\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"4268\">
+                <formattedValue language=\"en\">Countryside </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"402\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"4144\">
+                <formattedValue language=\"en\">Flower</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name=\"ObjMultimediaRef\" targetModule=\"Multimedia\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"114\" uuid=\"57c9c1cc-28f0-4560-ad3c-c31722194785\" seqNo=\"0\"/>
+        </moduleReference>
+        <moduleReference name=\"ObjConservationRef\" targetModule=\"Conservation\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"44\" uuid=\"a3d3e08f-3cd5-4c05-90d4-cace0d851142\" seqNo=\"0\">
+            <formattedValue language=\"en\">Damage, 11/01/2013, Objet perdu lors du transert puis retrouvé lors de l'inventaire</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjPerAssociationRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"59\" uuid=\"c93aa2b2-102f-4c9c-83f9-f741a6ca5a6c\" seqNo=\"0\">
+            <formattedValue language=\"en\">David Hamilton, Photographer</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name=\"ObjMaterialSupportCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjMaterialGrp\">
+              <repeatableGroupItem id=\"393\">
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\">
+                  <vocabularyReferenceItem id=\"3386\">
+                    <formattedValue language=\"en\">Photographic film</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjMaterialTechniqueCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjTechniqueGrp\">
+              <repeatableGroupItem id=\"392\">
+                <vocabularyReference name=\"TechniqueVoc\" id=\"441\">
+                  <vocabularyReferenceItem id=\"3512\">
+                    <formattedValue language=\"en\">Photography</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim2DGrp\">
+              <repeatableGroupItem id=\"395\">
+                <dataField dataType=\"Numeric\" name=\"SecondNum\">
+                  <value>5.000000</value>
+                  <formattedValue language=\"en\">5</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>5.000000</value>
+                  <formattedValue language=\"en\">5</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2829\">
+                    <formattedValue language=\"en\">cm</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\">
+                  <vocabularyReferenceItem id=\"3289\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem id=\"391\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Les Glycines</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+              <repeatableGroupItem id=\"473\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>The wisterias</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3532\">
+                    <formattedValue language=\"en\">Title EN</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+      <moduleItem id=\"69\" uuid=\"582931d1-2fad-4540-a54b-5a308319a8fc\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>69</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>cf</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-20 12:05:04.478</value>
+          <formattedValue language=\"en\">05/20/2014 12:05</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>DefaultOrgUnit</value>
+        </systemField>
+      </moduleItem>
+      <moduleItem id=\"70\" uuid=\"45808fb4-c7df-404e-9c67-a809d0323327\" hasAttachments=\"false\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>70</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>cf</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-20 16:36:14.42</value>
+          <formattedValue language=\"en\">05/20/2014 16:36</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>NoticesProvisoires</value>
+        </systemField>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"488\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"PlaceVoc\" id=\"443\">
+              <vocabularyReferenceItem id=\"3527\">
+                <formattedValue language=\"en\">South America</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+      </moduleItem>
+      <moduleItem id=\"64\" uuid=\"590863f2-dc1e-49df-ad4a-e01a9bf6fd9b\" hasAttachments=\"true\">
+        <systemField dataType=\"Long\" name=\"__id\">
+          <value>64</value>
+        </systemField>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\">
+          <value>lfournis</value>
+        </systemField>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\">
+          <value>2014-05-23 12:32:34.155</value>
+          <formattedValue language=\"en\">05/23/2014 12:32</formattedValue>
+        </systemField>
+        <systemField dataType=\"Long\" name=\"__orgUnit\">
+          <value>NinaRicci</value>
+        </systemField>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\">
+          <value>vers 1946</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjAlterationFactorTxt\">
+          <value>lumière - poussière - manipulation</value>
+        </dataField>
+        <dataField dataType=\"Date\" name=\"ObjAcquisitionDateDat\">
+          <value>2009-01-01Z</value>
+          <formattedValue language=\"en\">01/01/2009</formattedValue>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\">
+          <value>NR.2013.432.1à2</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjHumidityTxt\">
+          <value>35 – 40 %</value>
+        </dataField>
+        <dataField dataType=\"Clob\" name=\"ObjInscription0043Clb\">
+          <value>En bas à droite : \"El Rancho Vegas\"</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjLuminosityTxt\">
+          <value>100 lux</value>
+        </dataField>
+        <dataField dataType=\"Varchar\" name=\"ObjTemperatureTxt\">
+          <value>18 – 20°C</value>
+        </dataField>
+        <vocabularyReference name=\"ObjEMuseumPlusVoc\" id=\"421\">
+          <vocabularyReferenceItem id=\"3314\">
+            <formattedValue language=\"en\">Yes</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjCategoryVoc\" id=\"408\">
+          <vocabularyReferenceItem id=\"3702\">
+            <formattedValue language=\"en\">Bottle / Packaging</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjAcquisitionModeVoc\" id=\"405\">
+          <vocabularyReferenceItem id=\"3236\">
+            <formattedValue language=\"en\">Purchase via auction</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjModeExploit0043Voc\" id=\"429\">
+          <vocabularyReferenceItem id=\"3436\">
+            <formattedValue language=\"en\">Exhibition</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjMonitoringIntermittencyVoc\" id=\"430\">
+          <vocabularyReferenceItem id=\"3440\">
+            <formattedValue language=\"en\">Yearly</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjNormalLocationVoc\" id=\"374\">
+          <vocabularyReferenceItem id=\"3851\">
+            <formattedValue language=\"en\">Armoire 2</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjStatus0043Voc\" id=\"383\">
+          <vocabularyReferenceItem id=\"3097\">
+            <formattedValue language=\"en\">Pending validation after creation</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <vocabularyReference name=\"ObjRights0043Voc\" id=\"440\">
+          <vocabularyReferenceItem id=\"3484\">
+            <formattedValue language=\"en\">No but allowed for institutional and historic reasons only</formattedValue>
+          </vocabularyReferenceItem>
+        </vocabularyReference>
+        <repeatableGroup name=\"ObjRefgeo0043Grp\">
+          <repeatableGroupItem id=\"378\">
+            <vocabularyReference name=\"TypeVoc\" id=\"435\">
+              <vocabularyReferenceItem id=\"3464\">
+                <formattedValue language=\"en\">Creation place</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"RefVoc\" id=\"379\">
+              <vocabularyReferenceItem id=\"3018\">
+                <formattedValue language=\"en\">France  </formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjOtherNumberGrp\">
+          <repeatableGroupItem id=\"374\">
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR4549</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\">
+              <vocabularyReferenceItem id=\"3461\">
+                <formattedValue language=\"en\">Altima number</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjPrescriptions0043Grp\">
+          <repeatableGroupItem id=\"382\">
+            <vocabularyReference name=\"TypeVoc\" id=\"437\">
+              <vocabularyReferenceItem id=\"3475\">
+                <formattedValue language=\"en\">Take picture</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjColour0043Grp\">
+          <repeatableGroupItem id=\"380\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3276\">
+                <formattedValue language=\"en\">White</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"379\">
+            <vocabularyReference name=\"ColourVoc\" id=\"410\">
+              <vocabularyReferenceItem id=\"3284\">
+                <formattedValue language=\"en\">Gold</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem id=\"385\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+          </repeatableGroupItem>
+          <repeatableGroupItem id=\"503\">
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\">
+              <value>true</value>
+              <formattedValue language=\"en\">yes</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\">
+              <value>false</value>
+              <formattedValue language=\"en\">no</formattedValue>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjBriefDescriptionGrp\">
+          <repeatableGroupItem id=\"367\">
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\">
+              <value>Présentation dans un coffret de satin avec un décor sérigraphié de Christian Bérard\nSans doute la première présentation de Coeur-Joie\n1 exemplaire</value>
+            </dataField>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\">
+              <vocabularyReferenceItem id=\"3248\">
+                <formattedValue language=\"en\">FR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem id=\"366\">
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\">
+              <value>NR.2013.409.1à3</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\">
+              <value>432.1à2</value>
+            </dataField>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\">
+              <value>NR.2013</value>
+            </dataField>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjLine0043Grp\">
+          <repeatableGroupItem id=\"373\">
+            <vocabularyReference name=\"LineVoc\" id=\"425\">
+              <vocabularyReferenceItem id=\"3338\">
+                <formattedValue language=\"en\">Cœur-Joie</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem id=\"381\">
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\">
+              <vocabularyReferenceItem id=\"4133\">
+                <formattedValue language=\"en\">Heart</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name=\"ObjExhibitionRef\" targetModule=\"Exhibition\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"72\" uuid=\"63c4b354-d4cc-42b8-b4ac-4062b88d59b7\" seqNo=\"0\">
+            <formattedValue language=\"en\">Exhibition, Chamerolles, 20 ans, 07/07/2012 - 09/30/2012</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjContractRef\" targetModule=\"Contract\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"44\" uuid=\"4929f19b-6786-4955-8031-a3a9990d60d2\" seqNo=\"0\">
+            <formattedValue language=\"en\">Accepted: External loan, Expostion / Château de Chamerolles, 07/08/2012 - 09/30/2012</formattedValue>
+            <dataField dataType=\"Numeric\" name=\"InsuranceValueNum\">
+              <value>350.000000</value>
+              <formattedValue language=\"en\">350</formattedValue>
+            </dataField>
+            <dataField dataType=\"Numeric\" name=\"ConversionRateNum\">
+              <value>1.000000</value>
+              <formattedValue language=\"en\">1</formattedValue>
+            </dataField>
+            <vocabularyReference name=\"DecisionVoc\">
+              <vocabularyReferenceItem>
+                <formattedValue language=\"en\">Accepted</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+            <vocabularyReference name=\"CurrencyVoc\" id=\"368\">
+              <vocabularyReferenceItem id=\"2706\">
+                <formattedValue language=\"en\">EUR</formattedValue>
+              </vocabularyReferenceItem>
+            </vocabularyReference>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjConservationRef\" targetModule=\"Conservation\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"42\" uuid=\"8a948978-a2f5-4781-a220-4a619e9ea279\" seqNo=\"0\">
+            <formattedValue language=\"en\">Intervention, 09/02/2013 - 09/13/2013, Reconditionnement de l'ensemble des collections parfums Nina Ricci lors du transfert au 65 avenue des Champs-Elyséess\n\n\n\n\n\n\n</formattedValue>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjPerAssociationRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem moduleItemId=\"62\" uuid=\"8f0d9f63-75c1-4615-80f9-c6725dd374c2\" seqNo=\"0\">
+            <formattedValue language=\"en\">Dimitri Bouchène, Painter</formattedValue>
+            <dataField dataType=\"Varchar\" name=\"NotesClb\">
+              <value>
+              </value>
+            </dataField>
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name=\"ObjMaterialSupportCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjMaterialGrp\">
+              <repeatableGroupItem id=\"376\">
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\">
+                  <vocabularyReferenceItem id=\"3373\">
+                    <formattedValue language=\"en\">Satin</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+              <repeatableGroupItem id=\"475\">
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\">
+                  <vocabularyReferenceItem id=\"3427\">
+                    <formattedValue language=\"en\">Crystal</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim3DGrp\">
+              <repeatableGroupItem id=\"377\">
+                <dataField dataType=\"Numeric\" name=\"FirstNum\">
+                  <value>15.000000</value>
+                  <formattedValue language=\"en\">15</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"ThirdNum\">
+                  <value>3.000000</value>
+                  <formattedValue language=\"en\">3</formattedValue>
+                </dataField>
+                <dataField dataType=\"Numeric\" name=\"SecondNum\">
+                  <value>11.000000</value>
+                  <formattedValue language=\"en\">11</formattedValue>
+                </dataField>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\">
+                  <value>dimension avec coffret</value>
+                </dataField>
+                <vocabularyReference name=\"TypeVoc\" id=\"413\">
+                  <vocabularyReferenceItem id=\"3295\">
+                    <formattedValue language=\"en\">Object</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\">
+                  <vocabularyReferenceItem id=\"2828\">
+                    <formattedValue language=\"en\">m</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <repeatableGroup name=\"ObjDimWeightGrp\">
+              <repeatableGroupItem id=\"478\">
+                <dataField dataType=\"Numeric\" name=\"WeightNum\">
+                  <value>34.000000</value>
+                  <formattedValue language=\"en\">34</formattedValue>
+                </dataField>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"2\">
+            <repeatableGroup name=\"ObjDimContenanceGrp\">
+              <repeatableGroupItem id=\"390\">
+                <dataField dataType=\"Numeric\" name=\"VolumeNum\">
+                  <value>25.000000</value>
+                  <formattedValue language=\"en\">25</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"418\">
+                  <vocabularyReferenceItem id=\"3305\">
+                    <formattedValue language=\"en\">mL</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+              <repeatableGroupItem id=\"479\">
+                <dataField dataType=\"Numeric\" name=\"VolumeNum\">
+                  <value>89.000000</value>
+                  <formattedValue language=\"en\">89</formattedValue>
+                </dataField>
+                <vocabularyReference name=\"UnitVoc\" id=\"418\">
+                  <vocabularyReferenceItem id=\"3305\">
+                    <formattedValue language=\"en\">mL</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"3\">
+            <repeatableGroup name=\"ObjDimDurationGrp\">
+              <repeatableGroupItem id=\"477\">
+                <dataField dataType=\"Long\" name=\"MinutesLnu\">
+                  <value>12</value>
+                  <formattedValue language=\"en\">12</formattedValue>
+                </dataField>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem id=\"361\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Coeur-Joie parfum flacon cristal de Lalique </value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3533\">
+                    <formattedValue language=\"en\">Title FR</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+              <repeatableGroupItem id=\"474\">
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\">
+                  <value>Coeur-Joie perfume Lalique crystal bottle</value>
+                </dataField>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\">
+                  <vocabularyReferenceItem id=\"3532\">
+                    <formattedValue language=\"en\">Title EN</formattedValue>
+                  </vocabularyReferenceItem>
+                </vocabularyReference>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+    </module>
+  </modules>
+</application>

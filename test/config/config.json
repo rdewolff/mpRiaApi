@@ -1,7 +1,7 @@
 {
-    "url": "https://<server/<instance>",
-    "username": "<username>",
-    "password": "<password>",
-    "keyfile" : "session.key",
-    "encoding": "utf8"
+    "url"      : "https://mp-ria-15.zetcom.com/MpWeb-apParisPuig",
+    "username" : "SuperAdmin",
+    "password" : "SuperAdmin",
+    "keyfile"  : "session.key",
+    "encoding" : "utf8"
 }

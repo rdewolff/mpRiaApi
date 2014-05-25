@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns=\"http://www.zetcom.com/ria/ws/module\">
+  <modules>
+    <module name=\"Object\">
+      <moduleItem>
+        <systemField dataType=\"Long\" name=\"__id\"/>
+        <systemField dataType=\"Varchar\" name=\"__lastModifiedUser\"/>
+        <systemField dataType=\"Timestamp\" name=\"__lastModified\"/>
+        <systemField dataType=\"Long\" name=\"__orgUnit\"/>
+        <dataField dataType=\"Clob\" name=\"ObjExhibitionClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjEnsembleDescriptionTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjEditionNrTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjDisplayRecommendationClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjDisplayModeTxt\"/>
+        <dataField dataType=\"Long\" name=\"ObjDateToLnu\"/>
+        <dataField dataType=\"Long\" name=\"ObjDateFromLnu\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDatingTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjDateDating0043Txt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjCreditLineTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjConditionNoteClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjColourTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjCertificateTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjBarcodeNumberTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjBriefDescriptionClb\"/>
+        <dataField dataType=\"Clob\" name=\"ObjAssemblyClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjAssociatedPlaceTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjAltimaCreatedby0043Txt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjAltimaCreationdate0043Txt\"/>
+        <dataField dataType=\"Numeric\" name=\"ObjAcquisitionValueNum\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjAlterationFactorTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjAcquisitionNotesClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjAcquisitionAddressTxt\"/>
+        <dataField dataType=\"Date\" name=\"ObjAcquisitionDateDat\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjMentionObl0043Txt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjNormalLocationTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjNotesClb\"/>
+        <dataField dataType=\"Long\" name=\"ObjNumberObjectsLnu\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNameTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectNumberTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectTitleSeriesTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjObjectTitleTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjOtherNumberTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjOwnerHistoryClb\"/>
+        <dataField dataType=\"Clob\" name=\"ObjPhysicalDescriptionClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjFramingTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjExportCertificateTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjHumidityTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjHandlingRecommendationClb\"/>
+        <dataField dataType=\"Clob\" name=\"ObjInscription0043Clb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjIncompatibleMaterialTxt\"/>
+        <dataField dataType=\"Date\" name=\"ObjInsuranceDateDat\"/>
+        <dataField dataType=\"Clob\" name=\"ObjInscriptionClb\"/>
+        <dataField dataType=\"Numeric\" name=\"ObjInsuranceValueNum\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjLocationDetail0043Txt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjISBN0043Txt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjLuminosityTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjLocationDetailTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjMaterialTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjMaterialTechniqueTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjRecordingNotesClb\"/>
+        <dataField dataType=\"Date\" name=\"ObjRecordCreatedDateDat\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjRecordCreatedByTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjRightsClb\"/>
+        <dataField dataType=\"Clob\" name=\"ObjUsageNoteClb\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjTemperatureTxt\"/>
+        <dataField dataType=\"Varchar\" name=\"ObjTechniqueTxt\"/>
+        <dataField dataType=\"Clob\" name=\"ObjStatusNotes0043Clb\"/>
+        <vocabularyReference name=\"ObjEMuseumPlusVoc\" id=\"421\"/>
+        <vocabularyReference name=\"ObjClassificationVoc\" id=\"409\"/>
+        <vocabularyReference name=\"ObjCategoryVoc\" id=\"408\"/>
+        <vocabularyReference name=\"ObjAcquisitionModeVoc\" id=\"405\"/>
+        <vocabularyReference name=\"ObjModeExploit0043Voc\" id=\"429\"/>
+        <vocabularyReference name=\"ObjMonitoringIntermittencyVoc\" id=\"430\"/>
+        <vocabularyReference name=\"ObjNormalLocationVoc\" id=\"374\"/>
+        <vocabularyReference name=\"ObjPeriodicity0043Voc\" id=\"436\"/>
+        <vocabularyReference name=\"ObjPhysicalDescriptionMovementTxt\"/>
+        <vocabularyReference name=\"ObjInternetVoc\" id=\"423\"/>
+        <vocabularyReference name=\"ObjRecordingStatusVoc\" id=\"438\"/>
+        <vocabularyReference name=\"ObjStatus0043Voc\" id=\"383\"/>
+        <vocabularyReference name=\"ObjRights0043Voc\" id=\"440\"/>
+        <vocabularyReference name=\"ObjRecordTypeVoc\" id=\"439\"/>
+        <repeatableGroup name=\"ObjRefgeo0043Grp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"TypeVoc\" id=\"435\"/>
+            <vocabularyReference name=\"RefVoc\" id=\"379\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjAcquisitionValueGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Numeric\" name=\"ValueNum\"/>
+            <dataField dataType=\"Numeric\" name=\"VatNum\"/>
+            <dataField dataType=\"Varchar\" name=\"InvoiceNumberTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Numeric\" name=\"DiscountNum\"/>
+            <dataField dataType=\"Numeric\" name=\"ConversionRateNum\"/>
+            <dataField dataType=\"Numeric\" name=\"ChargesPremiumNum\"/>
+            <vocabularyReference name=\"CurrencyVoc\" id=\"368\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjActionGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Varchar\" name=\"GenUserTxt\"/>
+            <dataField dataType=\"Date\" name=\"GenDateDat\"/>
+            <dataField dataType=\"Clob\" name=\"GenStatusActionClb\"/>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\"/>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Long\" name=\"NumberObjectsLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"Seperator1Txt\"/>
+            <vocabularyReference name=\"GenStatusActionVoc\" id=\"381\"/>
+            <vocabularyReference name=\"TypeVoc\" id=\"406\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjSignatureGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"TransliterationDEClb\"/>
+            <dataField dataType=\"Clob\" name=\"TransliterationENClb\"/>
+            <dataField dataType=\"Clob\" name=\"TransliterationOthersClb\"/>
+            <dataField dataType=\"Date\" name=\"DateDat\"/>
+            <vocabularyReference name=\"StatusVoc\" id=\"383\"/>
+            <vocabularyReference name=\"ChangedByVoc\" id=\"384\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjOtherNumberGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\"/>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"TypeVoc\" id=\"434\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjPrescriptions0043Grp\">
+          <repeatableGroupItem>
+            <vocabularyReference name=\"TypeVoc\" id=\"437\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjPublisher0043Grp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Varchar\" name=\"PlaceTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Varchar\" name=\"PublisherTxt\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjRecordingGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Date\" name=\"DateDat\"/>
+            <vocabularyReference name=\"RecorderVoc\" id=\"384\"/>
+            <vocabularyReference name=\"StatusVoc\" id=\"438\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjCurrentLocationGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Varchar\" name=\"LocationTxt\"/>
+            <dataField dataType=\"Date\" name=\"DateToDat\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Date\" name=\"DateFromDat\"/>
+            <vocabularyReference name=\"LocationVoc\" id=\"374\"/>
+            <vocabularyReference name=\"ReasonVoc\" id=\"376\"/>
+            <vocabularyReference name=\"StatusVoc\" id=\"377\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjDateGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Long\" name=\"SortLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"SourceTxt\"/>
+            <dataField dataType=\"Long\" name=\"YearFromLnu\"/>
+            <dataField dataType=\"Long\" name=\"YearToLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"DatingTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"TypeVoc\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjColour0043Grp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"ColourVoc\" id=\"410\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjTextGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Date\" name=\"DateDat\"/>
+            <dataField dataType=\"Clob\" name=\"TextClb\"/>
+            <dataField dataType=\"Varchar\" name=\"AuthorTxt\"/>
+            <vocabularyReference name=\"TypeVoc\" id=\"445\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjContentCategoryGrp\">
+          <repeatableGroupItem>
+            <vocabularyReference name=\"CategoryVoc\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjUse0043Grp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Varchar\" name=\"DurationTxt\"/>
+            <dataField dataType=\"Date\" name=\"DateToDat\"/>
+            <dataField dataType=\"Date\" name=\"DateFromDat\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseUsageBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseInternetBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseEditionBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CasePackagingBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseNDBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CasePLVBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CasePAEPBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseTVBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CasePRPBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseAucunBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseAffichageBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseCircuitBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"CaseCinemaBoo\"/>
+            <vocabularyReference name=\"PlaceVoc\" id=\"443\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjBriefDescriptionGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"DescriptionClb\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"TypeVoc\" id=\"407\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjInscriptionGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"TransliterationClb\"/>
+            <dataField dataType=\"Clob\" name=\"TranslationClb\"/>
+            <dataField dataType=\"Long\" name=\"SortLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"PositionTxt\"/>
+            <dataField dataType=\"Varchar\" name=\"MethodTxt\"/>
+            <vocabularyReference name=\"LanguageVoc\" id=\"373\"/>
+            <vocabularyReference name=\"TypeVoc\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjInventoryGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Date\" name=\"DateDat\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"StatusVoc\"/>
+            <vocabularyReference name=\"LocationVoc\" id=\"374\"/>
+            <vocabularyReference name=\"ReasonTxt\"/>
+            <vocabularyReference name=\"ResponsibleVoc\" id=\"384\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjObjectNumberGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Varchar\" name=\"NumberMaxTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Varchar\" name=\"Part2Txt\"/>
+            <dataField dataType=\"Varchar\" name=\"Part1Txt\"/>
+            <vocabularyReference name=\"TypeVoc\" id=\"431\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjMaterialTechniqueGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Date\" name=\"DateDat\"/>
+            <dataField dataType=\"Clob\" name=\"MatTechENClb\"/>
+            <dataField dataType=\"Clob\" name=\"MatTechDEClb\"/>
+            <dataField dataType=\"Clob\" name=\"MatTechOthersClb\"/>
+            <vocabularyReference name=\"ChangedByVoc\" id=\"384\"/>
+            <vocabularyReference name=\"StatusVoc\" id=\"383\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjLine0043Grp\">
+          <repeatableGroupItem>
+            <vocabularyReference name=\"LineVoc\" id=\"425\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjKeyword0043Grp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"KeywordVoc\" id=\"424\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <repeatableGroup name=\"ObjMarketValueGrp\">
+          <repeatableGroupItem>
+            <dataField dataType=\"Date\" name=\"DateDat\"/>
+            <dataField dataType=\"Numeric\" name=\"ValueNum\"/>
+            <dataField dataType=\"Varchar\" name=\"SourceTxt\"/>
+            <vocabularyReference name=\"CurrencyVoc\" id=\"368\"/>
+          </repeatableGroupItem>
+        </repeatableGroup>
+        <moduleReference name=\"ObjAcquisitionAddressRef\" targetModule=\"Address\" multiplicity=\"N:1\">
+          <moduleReferenceItem/>
+        </moduleReference>
+        <moduleReference name=\"ObjAccessoryRef\" targetModule=\"Accessory\" multiplicity=\"M:N\">
+          <moduleReferenceItem/>
+        </moduleReference>
+        <moduleReference name=\"ObjMultimediaRef\" targetModule=\"Multimedia\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Boolean\" name=\"ThumbnailBoo\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjLiteratureRef\" targetModule=\"Literature\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Varchar\" name=\"PageRefTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <vocabularyReference name=\"TypeVoc\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjExhibitionRef\" targetModule=\"Exhibition\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Long\" name=\"RefContractLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"RoomNoTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Varchar\" name=\"Theme0039Txt\"/>
+            <dataField dataType=\"Long\" name=\"SortLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"SubTheme0039Txt\"/>
+            <dataField dataType=\"Varchar\" name=\"CatalogNoTxt\"/>
+            <dataField dataType=\"Varchar\" name=\"ConditionCheckBy0014Txt\"/>
+            <dataField dataType=\"Varchar\" name=\"ConditionStatus0014Txt\"/>
+            <dataField dataType=\"Clob\" name=\"ConditionNotes0014Clb\"/>
+            <vocabularyReference name=\"LoanReportPrinted0014Voc\"/>
+            <vocabularyReference name=\"DecisionVoc\"/>
+            <vocabularyReference name=\"ConditionReportPrinted0014Voc\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjDepositorRef\" targetModule=\"Address\" multiplicity=\"N:1\">
+          <moduleReferenceItem/>
+        </moduleReference>
+        <moduleReference name=\"ObjContractRef\" targetModule=\"Contract\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Clob\" name=\"ShippingClb\"/>
+            <dataField dataType=\"Clob\" name=\"SecurityClb\"/>
+            <dataField dataType=\"Varchar\" name=\"WallCaseTxt\"/>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Numeric\" name=\"LoanFeeNum\"/>
+            <dataField dataType=\"Varchar\" name=\"SectionTxt\"/>
+            <dataField dataType=\"Boolean\" name=\"RightsClearedBoo\"/>
+            <dataField dataType=\"Clob\" name=\"ImageNotesClb\"/>
+            <dataField dataType=\"Boolean\" name=\"ImageClearedBoo\"/>
+            <dataField dataType=\"Boolean\" name=\"LabelPrintedBoo\"/>
+            <dataField dataType=\"Numeric\" name=\"InsuranceValueNum\"/>
+            <dataField dataType=\"Clob\" name=\"DisplayClb\"/>
+            <dataField dataType=\"Boolean\" name=\"HighResolutionBoo\"/>
+            <dataField dataType=\"Varchar\" name=\"GalleryTxt\"/>
+            <dataField dataType=\"Clob\" name=\"CourierClb\"/>
+            <dataField dataType=\"Numeric\" name=\"CourierFeeNum\"/>
+            <dataField dataType=\"Date\" name=\"DecisionDateDat\"/>
+            <dataField dataType=\"Clob\" name=\"ConditionTransportClb\"/>
+            <dataField dataType=\"Clob\" name=\"ConservationClb\"/>
+            <dataField dataType=\"Numeric\" name=\"ConservationFeeNum\"/>
+            <dataField dataType=\"Numeric\" name=\"ConversionRateNum\"/>
+            <dataField dataType=\"Boolean\" name=\"Box3Boo\"/>
+            <dataField dataType=\"Boolean\" name=\"Box4Boo\"/>
+            <dataField dataType=\"Clob\" name=\"ConditionExhibitionClb\"/>
+            <dataField dataType=\"Clob\" name=\"ConditionPackingClb\"/>
+            <dataField dataType=\"Boolean\" name=\"Box1Boo\"/>
+            <dataField dataType=\"Boolean\" name=\"Box2Boo\"/>
+            <vocabularyReference name=\"DecisionVoc\"/>
+            <vocabularyReference name=\"CurrencyVoc\" id=\"368\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjContentPersonRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjConservationRef\" targetModule=\"Conservation\" multiplicity=\"M:N\">
+          <moduleReferenceItem/>
+        </moduleReference>
+        <moduleReference name=\"ObjOwnerRef\" targetModule=\"Address\" multiplicity=\"N:1\">
+          <moduleReferenceItem/>
+        </moduleReference>
+        <moduleReference name=\"ObjPerAssociationRef\" targetModule=\"Person\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Varchar\" name=\"Display0019Txt\"/>
+            <dataField dataType=\"Varchar\" name=\"NotesClb\"/>
+            <dataField dataType=\"Varchar\" name=\"RoleTxt\"/>
+            <dataField dataType=\"Long\" name=\"SortLnu\"/>
+            <dataField dataType=\"Varchar\" name=\"SourceTxt\"/>
+            <vocabularyReference name=\"AttributionVoc\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <moduleReference name=\"ObjObjectGroupsRef\" targetModule=\"ObjectGroup\" multiplicity=\"M:N\">
+          <moduleReferenceItem>
+            <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+            <dataField dataType=\"Long\" name=\"SortLnu\"/>
+          </moduleReferenceItem>
+        </moduleReference>
+        <composite name=\"ObjMaterialSupportCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjMaterialGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <vocabularyReference name=\"MaterialVoc\" id=\"427\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <repeatableGroup name=\"ObjSupportGrp\">
+              <repeatableGroupItem>
+                <vocabularyReference name=\"SupportVoc\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjMaterialTechniqueCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjTechniqueGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Varchar\" name=\"NotesClb\"/>
+                <vocabularyReference name=\"TechniqueVoc\" id=\"441\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObject0043Cgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDim2DGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Varchar\" name=\"SuffixTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixENTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixDETxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixENTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\"/>
+                <dataField dataType=\"Numeric\" name=\"SecondNum\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixDETxt\"/>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\"/>
+                <vocabularyReference name=\"TypeVoc\" id=\"412\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <repeatableGroup name=\"ObjDim3DGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Varchar\" name=\"PrefixDETxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Numeric\" name=\"FirstNum\"/>
+                <dataField dataType=\"Numeric\" name=\"ThirdNum\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixENTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixDETxt\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Numeric\" name=\"SecondNum\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixENTxt\"/>
+                <vocabularyReference name=\"TypeVoc\" id=\"413\"/>
+                <vocabularyReference name=\"UnitVoc\" id=\"369\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"2\">
+            <repeatableGroup name=\"ObjDimTailleGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\"/>
+                <dataField dataType=\"Numeric\" name=\"TailleNum\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixTxt\"/>
+                <vocabularyReference name=\"UnitVoc\" id=\"419\"/>
+                <vocabularyReference name=\"TypeVoc\" id=\"415\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"3\">
+            <repeatableGroup name=\"ObjDimWeightGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Varchar\" name=\"PrefixDETxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixENTxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Numeric\" name=\"WeightNum\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixENTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixDETxt\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\"/>
+                <vocabularyReference name=\"UnitVoc\" id=\"370\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"4\">
+            <repeatableGroup name=\"ObjDimContenanceGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Numeric\" name=\"VolumeNum\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixTxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\"/>
+                <vocabularyReference name=\"UnitVoc\" id=\"418\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"5\">
+            <repeatableGroup name=\"ObjDimDurationGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixDETxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixTxt\"/>
+                <dataField dataType=\"Long\" name=\"SecondsLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixDETxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PrefixENTxt\"/>
+                <dataField dataType=\"Long\" name=\"MinutesLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixENTxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Varchar\" name=\"SuffixTxt\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjDimObjectCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjDimOtherGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Varchar\" name=\"DimensionTxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <vocabularyReference name=\"TypeVoc\" id=\"414\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjValuesCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjInsuranceGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Numeric\" name=\"ConversionRateNum\"/>
+                <dataField dataType=\"Varchar\" name=\"CertificateNrTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"PolicyNumberTxt\"/>
+                <dataField dataType=\"Numeric\" name=\"ValueNum\"/>
+                <dataField dataType=\"Date\" name=\"DateFromDat\"/>
+                <dataField dataType=\"Date\" name=\"DateToDat\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <vocabularyReference name=\"CurrencyVoc\" id=\"368\"/>
+                <moduleReference name=\"AddressRef\" targetModule=\"Address\" multiplicity=\"N:1\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <repeatableGroup name=\"ObjAppraisalGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Date\" name=\"DateDat\"/>
+                <dataField dataType=\"Numeric\" name=\"ValueLowNum\"/>
+                <dataField dataType=\"Numeric\" name=\"ValueHighNum\"/>
+                <dataField dataType=\"Numeric\" name=\"ConversionRateNum\"/>
+                <vocabularyReference name=\"CurrencyVoc\" id=\"368\"/>
+                <moduleReference name=\"AddressRef\" targetModule=\"Address\" multiplicity=\"N:1\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"2\">
+            <repeatableGroup name=\"ObjSaleGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Numeric\" name=\"ConversionRateNum\"/>
+                <dataField dataType=\"Date\" name=\"DateDat\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Numeric\" name=\"ValueNum\"/>
+                <vocabularyReference name=\"CurrencyVoc\" id=\"368\"/>
+                <moduleReference name=\"AddressRef\" targetModule=\"Address\" multiplicity=\"N:1\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectCre\">
+          <compositeItem seqNo=\"0\">
+            <moduleReference name=\"ObjObjectARef\" targetModule=\"Object\" multiplicity=\"M:N\">
+              <moduleReferenceItem>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <vocabularyReference name=\"TypeAVoc\"/>
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <moduleReference name=\"ObjObjectBRef\" targetModule=\"Object\" multiplicity=\"M:N\">
+              <moduleReferenceItem>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <vocabularyReference name=\"TypeBVoc\"/>
+              </moduleReferenceItem>
+            </moduleReference>
+          </compositeItem>
+        </composite>
+        <composite name=\"ObjObjectTitleCgr\">
+          <compositeItem seqNo=\"0\">
+            <repeatableGroup name=\"ObjObjectTitleGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Varchar\" name=\"SourceTxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"TitleOthersTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\"/>
+                <dataField dataType=\"Varchar\" name=\"TitleDETxt\"/>
+                <dataField dataType=\"Varchar\" name=\"TitleENTxt\"/>
+                <dataField dataType=\"Date\" name=\"DateDat\"/>
+                <vocabularyReference name=\"StatusVoc\" id=\"383\"/>
+                <vocabularyReference name=\"Type0043Voc\" id=\"446\"/>
+                <vocabularyReference name=\"ChangedByVoc\" id=\"384\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+          <compositeItem seqNo=\"1\">
+            <repeatableGroup name=\"ObjObjectTitleFurtherGrp\">
+              <repeatableGroupItem>
+                <dataField dataType=\"Long\" name=\"SortLnu\"/>
+                <dataField dataType=\"Varchar\" name=\"SourceTxt\"/>
+                <dataField dataType=\"Clob\" name=\"NotesClb\"/>
+                <dataField dataType=\"Varchar\" name=\"TitleTxt\"/>
+                <vocabularyReference name=\"TypeVoc\" id=\"433\"/>
+              </repeatableGroupItem>
+            </repeatableGroup>
+          </compositeItem>
+        </composite>
+      </moduleItem>
+    </module>
+  </modules>
+</application>"

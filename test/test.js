@@ -84,7 +84,18 @@ function runMyTests() {
 	// * Custom function tests
 	// ************************************************************************
 	console.time('runMyTests');
-	ria.getModuleList(callback, 'array');
+
+	// get all the module
+	//ria.getModuleList(callback, 'array');
+
+	// get all the fields, type, groups, voc, etc.. from a specified module
+	//ria.getModuleDefinition('Object', callback);
+
+	// TODO how to list all object in a given module? Only via a search?
+	//ria.postModuleSearch('Object', '<application xmlns="http://www.zetcom.com/ria/ws/module/search" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zetcom.com/ria/ws/module/search http://www.zetcom.com/ria/ws/module/search/search_1_0.xsd"><modules><module name="Object"><search><fulltext>*</fulltext></search></module></modules></application>', callback);
+	ria.getModuleObjects('Object');
+
+
 
 	// ria.getModuleFields('Object');
 
