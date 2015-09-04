@@ -1,7 +1,7 @@
 {
-    "url"      : "https://mp-ria-15.zetcom.com/MpWeb-apParisPuig",
-    "username" : "SuperAdmin",
-    "password" : "SuperAdmin",
+    "url"      : "https://mp-ria-XX.zetcom.com/name",
+    "username" : "login",
+    "password" : "password",
     "keyfile"  : "session.key",
     "encoding" : "utf8"
 }
