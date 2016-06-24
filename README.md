@@ -65,6 +65,17 @@ npm test
 
 It will run the basic tests.
 
+### Config.json file git handling
+
+The ```config.json``` file is treated as ```--assume-unchanged```. This avoids to store any sensitive password online. This is done with the following command :
+
+```
+git update-index --assume-unchanged [<file> ...]
+```
+
+For more info, see [this thread](http://stackoverflow.com/questions/3319479/git-can-i-commit-a-file-and-ignore-the-content-changes).
+
+
 ## Questions
 
 - How to store the api key between session and not ask a new key on every request. Maybe we want to store these information like with the usage of Dirty : https://github.com/felixge/node-dirty
