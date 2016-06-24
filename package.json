@@ -4,9 +4,11 @@
   "description": "Library to communicate with MuseumPlus RIA API created by Zetcom",
   "main": "index.js",
   "dependencies": {
+    "asyncawait": "^1.0.3",
+    "bluebird": "^3.4.1",
+    "nconf": "~0.6.0",
     "request": "~2.34.0",
-    "xml2js": "~0.4.2",
-    "nconf": "~0.6.0"
+    "xml2js": "~0.4.2"
   },
   "devDependencies": {
     "htpasswd": "~2.1.1",
