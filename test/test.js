@@ -2,6 +2,9 @@
 var ria = require('../lib/ria.js');
 var fs = require('fs');
 var config = require('./config');
+var async = require('asyncawait/async'); // async & promises
+var await = require('asyncawait/await');
+var Promise = require('bluebird');
 
 // load config vars
 var CFG_URL = config.get('url'); // example : https://mp-ria-X.zetcom.com/MpWeb-instanceName
@@ -14,8 +17,12 @@ var CFG_ENCODING = config.get('encoding');
 ria.setInstanceUrl(CFG_URL);
 ria.setCreditentials(CFG_USERNAME, CFG_PASSWORD);
 
+var res = await(ria.loginAsync());
+console.log('Login result: ' + res);
+runMyTests();
+
 // try to read the session file containing the session key
-fs.readFile(CFG_KEY_FILE, CFG_ENCODING, function(err, data){
+/*fs.readFile(CFG_KEY_FILE, CFG_ENCODING, function(err, data){
 	// login if no session file
 	if (err) {
 		console.time('login');
@@ -39,7 +46,7 @@ fs.readFile(CFG_KEY_FILE, CFG_ENCODING, function(err, data){
 		runMyTests();
 	}
 
-});
+});*/
 
 
 function runMyTests() {
@@ -48,7 +55,7 @@ function runMyTests() {
 	// * Standard function tests
 	// ************************************************************************
 
-	//ria.getModuleDefinition('Multimedia', callback);
+	ria.getModuleDefinition('Multimedia', callback);
 	//ria.getModuleDefinition('Object', callback);
 
 	//ria.getAllModuleDefinition(callback);
@@ -83,7 +90,7 @@ function runMyTests() {
 	// ************************************************************************
 	// * Custom function tests
 	// ************************************************************************
-	console.time('runMyTests');
+	//console.time('runMyTests');
 
 	// get all the module
 	//ria.getModuleList(callback, 'array');
@@ -93,7 +100,7 @@ function runMyTests() {
 
 	// TODO how to list all object in a given module? Only via a search?
 	//ria.postModuleSearch('Object', '<application xmlns="http://www.zetcom.com/ria/ws/module/search" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zetcom.com/ria/ws/module/search http://www.zetcom.com/ria/ws/module/search/search_1_0.xsd"><modules><module name="Object"><search><fulltext>*</fulltext></search></module></modules></application>', callback);
-	ria.getModuleObjects('Object');
+	//ria.getModuleObjects('Object');
 
 
 
@@ -107,8 +114,8 @@ function runMyTests() {
 
 
 function callback(err, data) {
-	console.timeEnd('runMyTests');
-	console.dir('error: ' + err);
-	console.log("Data: %j", data); // show all json format
+	// console.timeEnd('runMyTests');
+    if (err)  console.dir(err);
+    if (data) console.log("Data: %j", data); // show all json format
 
 }
