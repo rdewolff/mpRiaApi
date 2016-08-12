@@ -4,7 +4,7 @@
   "description": "Library to communicate with MuseumPlus RIA API created by Zetcom",
   "main": "index.js",
   "dependencies": {
-    "request": "~2.34.0",
+    "request": "~2.74.0",
     "xml2js": "~0.4.2",
     "nconf": "~0.6.0"
   },
