@@ -1,3 +1,5 @@
+import { expect } from 'chai';
+
 // lib
 var ria = require('../lib/ria.js');
 var fs = require('fs');
