@@ -46,20 +46,26 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
     ria.setCreditentials(config.username, config.password);
     // login and check statusCode
     ria.loginPromise()
+    // We are using the promised version, results get packed in a payload containing
+    // all variables (err, res and body).
     .then(function (payload) { 
       expect(payload.res.statusCode).to.equal(200);
     })
     .catch(function (payload) { console.log('catch: ', payload.err, payload.res.statusCode); });
-
   });
 
-  it('should use a session key');
-  /*it('should respond to GET',function(){
-  superagent
-    .get('http://localhost:'+port)
-    .end(function(res){
-      expect(res.status).to.equal(200);
-  })*/
+  it('should use a session key of 32 alphanumeric characters', () => {
+    ria.login((err, res, body) => {
+      expect(ria.sessionKey).to.match(/[a-z0-9]{32}/);
+    });
+  });
+
+  it('should not work with a wrong session key', () => {
+    ria.setSessionKey('RANDOM_WRONG_SESSION_KEY');
+    ria.getAllModuleDefinition((err, res, body) => {
+      expect(res.statusCode).to.equal(403);
+    }); 
+  })
 
   it('should login again when the session key has expired');
 
