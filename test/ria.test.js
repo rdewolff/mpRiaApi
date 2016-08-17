@@ -1,28 +1,56 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-
-var ria = require('../lib/ria.js');
-var fs = require('fs');
-var config = require('./config');
+// var ria = require('../lib/ria.js');
+// var fs = require('fs');
 
 // load config vars
-var CFG_URL = config.get('url'); // example : https://mp-ria-X.zetcom.com/MpWeb-instanceName
-var CFG_USERNAME = config.get('username');
-var CFG_PASSWORD = config.get('password');
-var CFG_KEY_FILE = config.get('keyfile');
-var CFG_ENCODING = config.get('encoding');
-
-// setup ria access
-ria.setInstanceUrl(CFG_URL);
-ria.setCreditentials(CFG_USERNAME, CFG_PASSWORD);
+var config = require('./config.json')
+var ria;
 
 describe('mpRiaApi - MuseumPlus RIA API tests', function () {
 
+  console.log(`
+    Using following parameters :
+      Url:      ${config.url}
+      Username: ${config.username}
+      Password: ${config.password}`);
+
+  it('should create an object and set properties correctly', () => {
+    var opts = {
+      sessionKey: 'TEST.FILE',
+      instanceUrl: config.url,
+      username: config.username,
+      password: config.password,
+    }
+    ria = require('../lib/ria.js').createInstance(opts);
+    expect(ria).to.have.property('sessionKey', opts.sessionKey);
+    expect(ria).to.have.property('instanceUrl', opts.instanceUrl);
+    expect(ria).to.have.property('username', opts.username);
+    expect(ria).to.have.property('password', opts.password);
+  });
+
+  it('should allow to set url and creditentials via functions', () => {
+    var opts = {
+      newUrl: 'http://www.mytesturl.com',
+      newUsername: 'myNewUsername',
+      newPassword: 'myNewPassword',
+    }
+    ria.setInstanceUrl(opts.newUrl);
+    ria.setCreditentials(opts.newUsername, opts.newPassword);
+  });
+
   it('should login on the remote API', () => {
-    var res = ria.loginPromise()
-    .then(function (err, data, body) { console.log('done', JSON.stringify(err)); return data; })
-    .catch(function (err, data, body) { console.log('catch: ', JSON.stringify(err)); });
-    expect(res).to.equal(res);
+    // create new ria object
+    ria = require('../lib/ria.js');
+    ria.setInstanceUrl(config.url);
+    ria.setCreditentials(config.username, config.password);
+    // login and check statusCode
+    ria.loginPromise()
+    .then(function (payload) { 
+      expect(payload.res.statusCode).to.equal(200);
+    })
+    .catch(function (payload) { console.log('catch: ', payload.err, payload.res.statusCode); });
+
   });
 
   it('should use a session key');
