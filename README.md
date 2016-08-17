@@ -1,22 +1,21 @@
 # ZetCom RIA API Javascript access
 
-The goal is to be able to access RIA api and retrieve information from there.
+This library will enable you to access Zetcom's RIA API with Node.JS.
 
 ## Prerequists
 
-### node.js npm libraries
-
-- request
-- xml2js
-- nconf
-
-To install all the required libraries, just use npm and run :
+Clone this repository and install the libraries with :
 
 ```
 npm install
 ```
 
-Et voilà!
+### node.js npm libraries
+
+The following libraries will be installed :
+
+- request
+- xml2js
 
 ## Usage
 
@@ -31,44 +30,67 @@ ria.setCreditentials("username", "password");
 ria.setInstanceUrl("https://mp-ria-X.zetcom.com/instanceName");
 
 // authenticate
-ria._login(function() {
-  // get the all the available module
+ria.login(function(err, res, body) {
+  // get the all the available module in an array
   ria.getModuleList(function(err, data) {
       console.dir('\nError: ' + err);
       console.log("\nData: %j", data);
     }, 'array');
 });
-
 ```
 
-You can use a provided test file in ```/test``` folder. Please edit ```/test/config/config.json``` first.
+Have a look at the tests to see some more examples on how to use the library.
 
-Then you can execute the test with ```npm test```.
+## API
+
+To be completed.
+
+### setCreditentials(username, password)
+### setInstanceUrl(instanceUrl)
+### getSessionKey()
+### setSessionKey(key)
+### login(callback)
+### loginPromise()
+### deleteSession(callback)
+### getAllModuleDefinition(callback, returnFormat)
+### getModuleDefinition(moduleName, callback, returnFormat)
+### getModuleItem(moduleName, id, callback, returnFormat)
+### getModuleOrgunits(moduleName, callback)
+### getVocabularyGroup(id, callback)
+### getVocabulary(id, callback)
+### postModuleSearch(moduleName, searchCriteria, callback, returnFormat)
+### getModuleList(callback, returnType)
+### getModuleObjects(moduleName, callback)
+### getModuleFields(moduleName, callback)
+### getAllObjectFromModule(moduleName, args, callback, returnFormat)
+
+args : Object with the following properties :
+- offset : default 0
+- limit : The max number of object to retrieve
+- sorting : Array of Object containing following properties :
+    + fieldPath: RIA valid fieldPath
+    + direction: RIA valid direction : 'Ascending' or 'Descending'.
 
 ## Tests
 
+The test are done using mocha and chai. You can check the subfolder ```/test``` to check all the fino.
+
 ### Configuration
 
-The test configuration file is located in ```/test/test.js```. To execute it, you will have to parameter it with the config file. The config file is located in ```/test/config/config.json```. The following options are required :
+The test configuration file is located in ```/test/config.json```. The following options are required :
 
 1. url : the URL of the RIA application
 2. username : the username
 3. password : the password
-4. keyfile : the keyfile where the session key will be stored
-5. encoding : the character encoding to use. Default is utf8.
+4. keyfile : the keyfile where the session key will be stored (optional)
+5. encoding : the character encoding to use. Default is utf8 (optional)
 
-To run the tests, execute the following command :
+You can execute the test with ```npm run test``` or ```npm run test:watch``` for live reload.
 
-```
-npm test
-```
+## TODO
 
-It will run the basic tests.
-
-## Questions
-
-- How to store the api key between session and not ask a new key on every request. Maybe we want to store these information like with the usage of Dirty : https://github.com/felixge/node-dirty
-
+- Add API documentation (add description and example for each function).
+- Cleanup the old tests in ```./test/test.js```.
 
 ## References
 
