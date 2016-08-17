@@ -7,6 +7,13 @@ var expect = require('chai').expect;
 var config = require('./config.json')
 var ria;
 
+function resetRia(ria) {
+  ria = require('../lib/ria.js');
+  ria.setInstanceUrl(config.url);
+  ria.setCreditentials(config.username, config.password);
+  return ria;
+}
+
 describe('mpRiaApi - MuseumPlus RIA API tests', function () {
 
   console.log(`
@@ -30,6 +37,7 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
   });
 
   it('should allow to set url and creditentials via functions', () => {
+    ria = require('../lib/ria.js');
     var opts = {
       newUrl: 'http://www.mytesturl.com',
       newUsername: 'myNewUsername',
@@ -40,10 +48,7 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
   });
 
   it('should login on the remote API', () => {
-    // create new ria object
-    ria = require('../lib/ria.js');
-    ria.setInstanceUrl(config.url);
-    ria.setCreditentials(config.username, config.password);
+    ria = resetRia(ria);
     // login and check statusCode
     ria.loginPromise()
     // We are using the promised version, results get packed in a payload containing
@@ -55,19 +60,31 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
   });
 
   it('should use a session key of 32 alphanumeric characters', () => {
+    ria = resetRia(ria);
     ria.login((err, res, body) => {
-      expect(ria.sessionKey).to.match(/[a-z0-9]{32}/);
+      expect(ria.getSessionKey()).to.match(/[a-z0-9]{32}/);
     });
   });
 
   it('should not work with a wrong session key', () => {
+    ria = resetRia(ria);
     ria.setSessionKey('RANDOM_WRONG_SESSION_KEY');
     ria.getAllModuleDefinition((err, res, body) => {
       expect(res.statusCode).to.equal(403);
     }); 
   })
 
-  it('should login again when the session key has expired');
+  it('should login again when the session key has expired', () => {
+    // we will do the following to test this special use case :
+    // 1. login
+    // 2. invalidate the session key
+    // 3. query again the system
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      expect(res.statusCode).to.equal(200);
+      ria.setSessionKey('RANDOM_WRONG_SESSION_KEY');
+    });
+  });
 
   it('should query a single object');
 
