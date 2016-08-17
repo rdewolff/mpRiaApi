@@ -7,6 +7,13 @@ var expect = require('chai').expect;
 var config = require('./config.json')
 var ria;
 
+var option = {
+  sorting: {
+    asc : 'Ascending',
+    desc: 'Descending',
+  }
+}
+
 function resetRia(ria) {
   ria = require('../lib/ria.js');
   ria.setInstanceUrl(config.url);
@@ -14,7 +21,7 @@ function resetRia(ria) {
   return ria;
 }
 
-describe('mpRiaApi - MuseumPlus RIA API tests', function () {
+describe('mpRiaApi - MuseumPlus RIA API', function () {
 
   console.log(`
     Using following parameters :
@@ -48,7 +55,7 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
     ria.setCreditentials(opts.newUsername, opts.newPassword);
   });
 
-  it('should login on the remote API', () => {
+  it('should login on the remote API', (done) => {
     ria = resetRia(ria);
     // login and check statusCode
     ria.loginPromise()
@@ -56,17 +63,23 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
     // all variables (err, res and body).
     .then(function (payload) { 
       expect(payload.res.statusCode).to.equal(200);
+      done();
     })
-    .catch(function (payload) { console.log('catch: ', payload.err, payload.res.statusCode); });
-  });
-
-  it('should use a session key of 32 alphanumeric characters', () => {
-    ria = resetRia(ria);
-    ria.login((err, res, body) => {
-      expect(ria.getSessionKey()).to.match(/[a-z0-9]{32}/);
+    .catch(function (payload) { 
+      console.log('catch: ', payload.err, payload.res.statusCode);
+      done(payload.err);
     });
   });
 
+  it('should use a session key of 32 alphanumeric characters', (done) => {
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      expect(ria.getSessionKey()).to.match(/[a-z0-9]{32}/);
+      done();
+    });
+  });
+
+  // FIXME: cannot use done() here, chai reports it's called multiple times!?
   it('should not work with a wrong session key', () => {
     ria = resetRia(ria);
     ria.setSessionKey('RANDOM_WRONG_SESSION_KEY');
@@ -122,8 +135,24 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
     ria = resetRia(ria);
     ria.login((err, res, body) => {
       ria.getAllObjectFromModule('Object', { limit: limit}, (err, res, body) => {
-        // console.log('body', body.application.modules[0].module[0].moduleItem);
+        //console.log('body', body.application.modules[0].module[0].moduleItem);
         expect(body.application.modules[0].module[0].moduleItem.length).to.equal(limit);
+      }, 'json');
+    });
+  });
+
+  it('should be able to change the order of the results', (done) => {
+    var limit = 1;
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      ria.getAllObjectFromModule('Object', { limit: limit, sort: [{fieldPath: '__id', direction: option.sorting.desc }]}, (err, res, body) => {
+        // console.log('body', body.application.modules[0].module[0].moduleItem);
+        var firstObjectId = body.application.modules[0].module[0].moduleItem[0].$.id;
+        // console.log('body', body.application.modules[0].module[0].moduleItem[0].$.id);
+        //console.log('body', JSON.stringify(body.application.modules[0].module[0].moduleItem));
+        expect(body.application.modules[0].module[0].moduleItem.length).to.equal(limit);
+        expect(firstObjectId).to.not.equal(1);
+        done();
       }, 'json');
     });
   });
