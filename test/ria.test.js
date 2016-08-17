@@ -20,9 +20,10 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
     Using following parameters :
       Url:      ${config.url}
       Username: ${config.username}
-      Password: ${config.password}`);
+      Password: ${config.password}
+  `);
 
-  it('should create an object and set properties correctly', () => {
+  it('should create an mpRiaApi object instance and set properties correctly', () => {
     var opts = {
       sessionKey: 'TEST.FILE',
       instanceUrl: config.url,
@@ -74,22 +75,57 @@ describe('mpRiaApi - MuseumPlus RIA API tests', function () {
     }); 
   })
 
-  it('should login again when the session key has expired', () => {
+  it('should be possible to login again when the session key has expired', () => {
     // we will do the following to test this special use case :
     // 1. login
     // 2. invalidate the session key
     // 3. query again the system
     ria = resetRia(ria);
     ria.login((err, res, body) => {
+      // login
       expect(res.statusCode).to.equal(200);
       ria.setSessionKey('RANDOM_WRONG_SESSION_KEY');
+      ria.getAllModuleDefinition((err, res, body) => {
+        expect(res.statusCode).to.equal(403);
+        ria.login((err, res, body) => {
+          expect(ria.getSessionKey()).to.match(/[a-z0-9]{32}/);
+          ria.getAllModuleDefinition((err, res, body) => {
+            expect(res.statusCode).to.equal(200);
+          }); 
+        });
+      }); 
     });
   });
 
-  it('should query a single object');
+  it('should get all modules definitions', () => {
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      ria.getAllModuleDefinition((err, res, body) => {
+        // console.log('body', body.application.modules[0].module.length);
+        expect(body.application.modules[0].module.length).to.be.at.least(4);
+      }, 'json');
+    });
+  });
 
-  it('should query multiple objects');
+  it('should query a single object (Module = Object, ID = 1)', () => {
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      ria.getModuleItem('Object', 1, (err, res, body) => {
+        // console.log('res.statusCode', res.statusCode);
+        expect(res.statusCode).to.equal(200);
+      }, 'json')
+    });
+  });
 
-  it('should search');
+  it('should query limited number of objects', () => {
+    var limit = 5;
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      ria.getAllObjectFromModule('Object', { limit: limit}, (err, res, body) => {
+        // console.log('body', body.application.modules[0].module[0].moduleItem);
+        expect(body.application.modules[0].module[0].moduleItem.length).to.equal(limit);
+      }, 'json');
+    });
+  });
 
 });
