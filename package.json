@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "request": "~2.74.0",
-    "xml2js": "~0.4.2",
+    "xml2js": "~0.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
