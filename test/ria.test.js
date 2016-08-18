@@ -113,17 +113,18 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
     });
   });
 
-  it('should get all modules definitions', () => {
+  it('should get all modules definitions', (done) => {
     ria = resetRia(ria);
     ria.login((err, res, body) => {
       ria.getAllModuleDefinition((err, res, body) => {
         // console.log('body', body.application.modules[0].module.length);
         expect(body.application.modules[0].module.length).to.be.at.least(4);
+        done();
       }, 'json');
     });
   });
 
-  it('should query a single object (Module = Object, ID = 1)', () => {
+  it('should query a single object (Module = Object, ID = 1)', (done) => {
     ria = resetRia(ria);
     ria.login((err, res, body) => {
       ria.getModuleItem('Object', 1, (err, res, body) => {
@@ -134,13 +135,14 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
     });
   });
 
-  it('should query limited number of objects', () => {
-    var limit = 5;
+  it('should query limited number of objects', (done) => {
+    var limit = 3;
     ria = resetRia(ria);
     ria.login((err, res, body) => {
-      ria.getAllObjectFromModule('Object', { limit: limit}, (err, res, body) => {
-        //console.log('body', body.application.modules[0].module[0].moduleItem);
+      ria.getAllObjectFromModule('Object', { limit: limit }, (err, res, body) => {
+        // console.log('body', body.application.modules[0].module[0].moduleItem);
         expect(body.application.modules[0].module[0].moduleItem.length).to.equal(limit);
+        done();
       }, 'json');
     });
   });
@@ -161,7 +163,16 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
     });
   });
 
-  it('should be able to get the standard image of an object');
+  it('should be able to get the thumbnail image of an object (medium size)', (done) => {
+    ria = resetRia(ria);
+    ria.login((err, res, body) => {
+      ria.getAllObjectFromModule('Object', { limit: 1, loadThumbnailMedium: true }, (err, res, body) => {
+        console.log('body', body.application.modules[0].module[0].moduleItem[0].thumbnails[0].thumbnail[0].value);
+        expect(body.application.modules[0].module[0].moduleItem[0].thumbnails[0].thumbnail[0].$.size).to.equal('medium');
+        done();
+      }, 'json');
+    });
+  });
 
   it('should be able to get the linked multimedia elements of an object');
 
