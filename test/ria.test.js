@@ -23,6 +23,9 @@ function resetRia(ria) {
 
 describe('mpRiaApi - MuseumPlus RIA API', function () {
 
+  // extend timeout
+  this.timeout(5000);
+
   console.log(`
     Using following parameters :
       Url:      ${config.url}
@@ -126,6 +129,7 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
       ria.getModuleItem('Object', 1, (err, res, body) => {
         // console.log('res.statusCode', res.statusCode);
         expect(res.statusCode).to.equal(200);
+        done();
       }, 'json')
     });
   });
@@ -149,12 +153,18 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
         // console.log('body', body.application.modules[0].module[0].moduleItem);
         var firstObjectId = body.application.modules[0].module[0].moduleItem[0].$.id;
         // console.log('body', body.application.modules[0].module[0].moduleItem[0].$.id);
-        //console.log('body', JSON.stringify(body.application.modules[0].module[0].moduleItem));
+        // console.log('body', JSON.stringify(body.application.modules[0].module[0].moduleItem));
         expect(body.application.modules[0].module[0].moduleItem.length).to.equal(limit);
         expect(firstObjectId).to.not.equal(1);
         done();
       }, 'json');
     });
   });
+
+  it('should be able to get the standard image of an object');
+
+  it('should be able to get the linked multimedia elements of an object');
+
+
 
 });
