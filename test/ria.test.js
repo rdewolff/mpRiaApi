@@ -166,8 +166,13 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
   it('should be able to get the thumbnail image of an object (medium size)', (done) => {
     ria = resetRia(ria);
     ria.login((err, res, body) => {
-      ria.getAllObjectFromModule('Object', { limit: 1, loadThumbnailMedium: true }, (err, res, body) => {
-        console.log('body', body.application.modules[0].module[0].moduleItem[0].thumbnails[0].thumbnail[0].value);
+      var args = { 
+        limit: 1, 
+        loadThumbnailMedium: true,
+        loadAttachment: true,
+      };
+      ria.getAllObjectFromModule('Object', args, (err, res, body) => {
+        // console.log('body', JSON.stringify(body.application.modules[0].module[0].moduleItem[0].attachment[0].$.name)); // .thumbnail[0].value);
         expect(body.application.modules[0].module[0].moduleItem[0].thumbnails[0].thumbnail[0].$.size).to.equal('medium');
         done();
       }, 'json');
