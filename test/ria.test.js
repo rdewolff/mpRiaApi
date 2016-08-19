@@ -4,15 +4,15 @@ var expect = require('chai').expect;
 // var fs = require('fs');
 
 // load config vars
-var config = require('./config.json')
+var config = require('./config.json');
 var ria;
 
 var option = {
   sorting: {
-    asc : 'Ascending',
+    asc: 'Ascending',
     desc: 'Descending',
-  }
-}
+  },
+};
 
 function resetRia(ria) {
   ria = require('../lib/ria.js');
@@ -24,7 +24,7 @@ function resetRia(ria) {
 describe('mpRiaApi - MuseumPlus RIA API', function () {
 
   // extend timeout
-  this.timeout(5000);
+  this.timeout(10000);
 
   console.log(`
     Using following parameters :
@@ -39,7 +39,7 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
       instanceUrl: config.url,
       username: config.username,
       password: config.password,
-    }
+    };
     ria = require('../lib/ria.js').createInstance(opts);
     expect(ria).to.have.property('sessionKey', opts.sessionKey);
     expect(ria).to.have.property('instanceUrl', opts.instanceUrl);
@@ -53,22 +53,25 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
       newUrl: 'http://www.mytesturl.com',
       newUsername: 'myNewUsername',
       newPassword: 'myNewPassword',
-    }
+    };
     ria.setInstanceUrl(opts.newUrl);
     ria.setCreditentials(opts.newUsername, opts.newPassword);
   });
 
   it('should login on the remote API', (done) => {
     ria = resetRia(ria);
+
     // login and check statusCode
     ria.loginPromise()
+
     // We are using the promised version, results get packed in a payload containing
     // all variables (err, res and body).
-    .then(function (payload) { 
+    .then(function (payload) {
       expect(payload.res.statusCode).to.equal(200);
       done();
     })
-    .catch(function (payload) { 
+
+    .catch(function (payload) {
       console.log('catch: ', payload.err, payload.res.statusCode);
       done(payload.err);
     });
@@ -88,8 +91,8 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
     ria.setSessionKey('RANDOM_WRONG_SESSION_KEY');
     ria.getAllModuleDefinition((err, res, body) => {
       expect(res.statusCode).to.equal(403);
-    }); 
-  })
+    });
+  });
 
   it('should be possible to login again when the session key has expired', () => {
     // we will do the following to test this special use case :
@@ -107,9 +110,9 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
           expect(ria.getSessionKey()).to.match(/[a-z0-9]{32}/);
           ria.getAllModuleDefinition((err, res, body) => {
             expect(res.statusCode).to.equal(200);
-          }); 
+          });
         });
-      }); 
+      });
     });
   });
 
@@ -131,7 +134,7 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
         // console.log('res.statusCode', res.statusCode);
         expect(res.statusCode).to.equal(200);
         done();
-      }, 'json')
+      }, 'json');
     });
   });
 
@@ -151,9 +154,19 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
     var limit = 1;
     ria = resetRia(ria);
     ria.login((err, res, body) => {
-      ria.getAllObjectFromModule('Object', { limit: limit, sort: [{fieldPath: '__id', direction: option.sorting.desc }]}, (err, res, body) => {
+      var args = {
+        limit: limit,
+        sort: [
+          {
+            fieldPath: '__id',
+            direction: option.sorting.desc,
+          },
+        ],
+      };
+      ria.getAllObjectFromModule('Object', args, (err, res, body) => {
         // console.log('body', body.application.modules[0].module[0].moduleItem);
         var firstObjectId = body.application.modules[0].module[0].moduleItem[0].$.id;
+
         // console.log('body', body.application.modules[0].module[0].moduleItem[0].$.id);
         // console.log('body', JSON.stringify(body.application.modules[0].module[0].moduleItem));
         expect(body.application.modules[0].module[0].moduleItem.length).to.equal(limit);
@@ -166,13 +179,12 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
   it('should be able to get the thumbnail image of an object (medium size)', (done) => {
     ria = resetRia(ria);
     ria.login((err, res, body) => {
-      var args = { 
-        limit: 1, 
+      var args = {
+        limit: 1,
         loadThumbnailMedium: true,
         loadAttachment: true,
       };
       ria.getAllObjectFromModule('Object', args, (err, res, body) => {
-        // console.log('body', JSON.stringify(body.application.modules[0].module[0].moduleItem[0].attachment[0].$.name)); // .thumbnail[0].value);
         expect(body.application.modules[0].module[0].moduleItem[0].thumbnails[0].thumbnail[0].$.size).to.equal('medium');
         done();
       }, 'json');
@@ -180,7 +192,5 @@ describe('mpRiaApi - MuseumPlus RIA API', function () {
   });
 
   it('should be able to get the linked multimedia elements of an object');
-
-
 
 });
